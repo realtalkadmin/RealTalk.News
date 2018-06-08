@@ -1,0 +1,229 @@
+
+/* ECKO MENU ICON */
+
+.toplevel_page_ecko_admin_page_root .dashicons-shield:before{
+	font-family: fontawesome;
+	font-size: 17px;
+	margin-top: 2px;
+	content: '\f02e';
+}
+
+body.toplevel_page_ecko_admin_page_root .update-nag{
+	display: none;
+}
+
+
+/* ECKO MENU PAGE */
+
+.ecko_admin{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	overflow: hidden;
+	max-width: 1920px;
+}
+
+.ecko_tile{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	position: relative;
+	float: left;
+	padding: 65px;
+	width: 33%;
+	height: 45vh;
+	text-align:center;
+	box-sizing: border-box;
+	min-height: 360px;
+}
+
+.ecko_tile:before{
+	content: '';
+	position: absolute;
+	display: block;
+	bottom: 0;
+	margin: 0 auto;
+	height: 1px;
+	width: 80%;
+	background: #dedee1;
+}
+
+.ecko_tile:nth-child(n+4):before{
+	display: none;
+}
+
+.ecko_tile:after{
+	content: '';
+	position: absolute;
+	display: block;
+	top: 10%;
+	right: 0;
+	width: 1px;
+	height: 80%;
+	background: #dedee1;
+}
+
+.ecko_tile:nth-child(3n):after{
+	display: none;
+}
+
+.ecko_tile h1, .ecko_tile h2{
+	margin: 0;
+	font-size: 26px;
+	font-weight: 200;
+	color: #2e3237;
+}
+
+.ecko_tile h1 i, .ecko_tile h2 i{
+	font-size: 34px;
+	color: #808790;
+	margin-right: 20px;
+	vertical-align: -5px;
+}
+
+.ecko_tile p{
+	margin: 30px 0;
+	font-family: 'Open Sans', arial, Sans-Serif;
+	font-size: 15px;
+	line-height: 31px;
+	color: #4e505a;
+}
+
+.ecko_tile .ecko_button{
+	margin: 15px auto 0;
+	padding: 12px 0;
+	display: block;
+	width: 55%;
+	border-radius: 2px;
+	background: #4f525b;
+	font-family: 'Open Sans', arial, Sans-Serif;
+	font-size: 14px;
+	font-weight: 600;
+	text-decoration: none;
+	color: #fff;
+}
+
+.ecko_tile .ecko_button.disabled{
+	opacity: 0.4;
+	filter: alpha(opacity=40);
+	pointer-events: none;
+}
+
+.ecko_tile .ecko_button:focus{
+	outline: 0;
+	box-shadow: none;
+}
+
+.ecko_tile .ecko_button:hover{
+	background: #2d2e33;
+}
+
+.ecko_tile_main{
+	
+}
+
+.ecko_tile_main .ecko_logo img{
+	width: 292px;
+	margin:0 auto;
+}
+
+.ecko_tile_main p{
+	margin-bottom: 15px;
+}
+
+.ecko_tile_main .ecko_social p{
+	margin: 0 0 15px 0;
+	font-weight: 700;
+	color: #acafb7;
+}
+
+.ecko_tile_main .ecko_social .ecko_button{
+	display: inline-block;
+	padding-left: 50px;
+	padding-right: 50px;
+	margin: 0 15px 0 0;
+	width: auto;
+}
+
+.ecko_tile .ecko_button.ecko_envato{
+	background: #6a9f3b;
+}
+
+.ecko_tile .ecko_button.ecko_envato:hover{
+	background: #619037;
+}
+
+.ecko_tile .ecko_button.ecko_twitter{
+	background: #2c73bb;
+}
+
+.ecko_tile .ecko_button.ecko_twitter:hover{
+	background: #26609b;
+}
+
+
+@media (max-width: 1700px){
+	.ecko_tile{
+		width: 50%;
+	}
+
+	.ecko_tile:nth-child(n+4):before{
+		display: block;
+	}
+
+	.ecko_tile:nth-child(3n):after{
+		display: block;
+	}
+
+	.ecko_tile:nth-child(n+5):before{
+		display: none;
+	}
+
+	.ecko_tile:nth-child(2n):after{
+		display: none;
+	}
+
+}
+
+@media (max-width: 1140px){
+	.ecko_tile{
+		width: 100%;
+	}
+
+	.ecko_tile_main{
+		text-align: center;
+	}
+
+	.ecko_tile_main .ecko_logo{
+		margin: 0 auto;
+	}
+
+	.ecko_tile:nth-child(n+5):before{
+		display: block;
+	}
+
+	.ecko_tile:nth-child(n+6):before{
+		display: none;
+	}
+
+	.ecko_tile:nth-child(3n):after{
+		display: none;
+	}
+
+	.ecko_tile:after{
+		display: none;
+	}
+
+}
+
+

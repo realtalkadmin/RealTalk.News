@@ -1,0 +1,103 @@
+/*------------------------------------------------------------------
+	8. Filter Bar
+-------------------------------------------------------------------*/
+
+.filter-bar {
+    position: relative;
+    z-index: 300;
+    overflow: hidden;
+    margin: 0 auto;
+    height: 100px;
+    background: #ebeff1;
+
+    @media (max-width: 1920px) {
+        height: 90px;
+    }
+
+    @media (max-width: 1120px) {
+        display: none;
+    }
+}
+
+.filter-bar-options {
+    float: left;
+    margin-top: 27px;
+    list-style: none;
+    text-transform: uppercase;
+    font-family: $font_header;
+
+    .title {
+        margin: 13px 33px 0 0;
+
+        &:after {
+            content: ':';
+        }
+    }
+
+    .active a {
+        background: #23272a;
+        color: #f3f5f8;
+    }
+
+    li {
+        float: left;
+        margin-right: 15px;
+        font-size: 18px;
+    }
+
+    a {
+        display: block;
+        padding: 14px 32px;
+        border-radius: 80px;
+        background: #fff;
+        color: #4e565d;
+        font-size: 13px;
+
+        &:hover {
+            background: #44444a;
+            color: #fff;
+        }
+    }
+
+    @media (max-width: 1920px) {
+        margin-top: 24px;
+
+        li {
+            margin-top: 3px;
+        }
+
+        a {
+            padding: 12px 30px;
+            font-size: 12px;
+        }
+    }
+}
+
+.filter-bar-search {
+    float: right;
+    margin: 27px 0 0;
+    width: 48px;
+    height: 48px;
+    border-radius: 48px;
+    background: #fff;
+    color: #b1b5bc;
+    text-align: center;
+    line-height: 48px;
+
+    &:hover {
+        background: #343338;
+        color: #fff;
+    }
+
+    @media (max-width: 1920px) {
+        margin-top: 23px;
+        width: 44px;
+        height: 44px;
+        font-size: 14px;
+        line-height: 44px;
+    }
+
+    @media (max-width: 1230px) {
+        display: none;
+    }
+}

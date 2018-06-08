@@ -1,0 +1,241 @@
+/*------------------------------------------------------------------
+	21. Author
+-------------------------------------------------------------------*/
+
+body.author {
+    .cover.cover-author {
+        height: 70vh;
+
+        .cover-shadow {
+            height: 70%;
+            opacity: 0.7;
+        }
+
+        .cover-content {
+            bottom: -60px;
+            max-width: 670px;
+            text-align: center;
+            @include display(flex);
+            @include flex-direction(column);
+            @include flex-wrap(nowrap);
+            @include justify-content(center);
+            @include align-content(stretch);
+            @include align-items(center);
+        }
+
+        .author-avatar {
+            width: 70px;
+            height: 70px;
+            border-radius: 70px;
+        }
+
+        .author-name {
+            margin: 30px 0 20px;
+            color: #fff;
+            font-weight: 400;
+            font-size: 33px;
+            line-height: 55px;
+        }
+
+        .author-twitter {
+            padding: 11px 23px;
+            border-radius: 100px;
+            background: #fff;
+            color: #121319;
+            font-size: 13px;
+            font-family: $font_header;
+
+            i {
+                margin-right: 10px;
+                color: $twitter_color;
+                font-size: 14px;
+            }
+
+            &:hover {
+                background: $twitter_color;
+                color: #fff;
+
+                i {
+                    color: #fff;
+                }
+            }
+        }
+
+        .author-bio {
+            color: #d6d9dd;
+            font-size: 17px;
+            line-height: 37px;
+        }
+
+        .author-social {
+            margin-top: 20px;
+			text-align: center;
+
+            li {
+                display: inline-block;
+                margin-right: 15px;
+                list-style: none;
+				margin-bottom: 15px;
+
+                a {
+                    display: block;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 42px;
+                    background: #191a1d;
+                    color: #fff;
+                    text-align: center;
+                    line-height: 42px;
+
+                    &.url:hover {
+                        background-color: #595959;
+                    }
+
+                    &.twitter:hover {
+                        background-color: $twitter_color;
+                    }
+
+                    &.facebook:hover {
+                        background-color: $facebook_color;
+                    }
+
+                    &.google:hover {
+                        background-color: $google_color;
+                    }
+
+                    &.dribbble:hover {
+                        background-color: $dribbble_color;
+                    }
+
+                    &.instagram:hover {
+                        background-color: $instagram_color;
+                    }
+
+                    &.github:hover {
+                        background-color: $github_color;
+                    }
+
+                    &.rss:hover {
+                        background-color: $rss_color;
+                    }
+
+                    &.youtube:hover {
+                        background-color: $youtube_color;
+                    }
+
+                    &.pinterest:hover {
+                        background-color: $pinterest_color;
+                    }
+
+                    &.linkedin:hover {
+                        background-color: $linkedin_color;
+                    }
+
+                    &.reddit:hover {
+                        background-color: $reddit_color;
+                    }
+
+                    &.skype:hover {
+                        background-color: $skype_color;
+                    }
+
+                    &.tumblr:hover {
+                        background-color: $tumblr_color;
+                    }
+
+                    &.vine:hover {
+                        background-color: $vine_color;
+                    }
+
+                    &.vk:hover {
+                        background-color: $vk_color;
+                    }
+
+                    &.flickr:hover {
+                        background-color: $flickr_color;
+                    }
+
+                    &.stackoverflow:hover {
+                        background-color: $stackoverflow_color;
+                    }
+
+                    &.twitch:hover {
+                        background-color: $twitch_color;
+                    }
+
+                    &.vimeo:hover {
+                        background-color: $vimeo_color;
+                    }
+
+                    &.weibo:hover {
+                        background-color: $weibo_color;
+                    }
+
+                    &.email:hover {
+                        background-color: $email_color;
+                    }
+
+                    &.soundcloud:hover {
+                        background-color: $soundcloud_color;
+                    }
+                }
+            }
+        }
+
+        @media (max-width: 750px) {
+            .cover-content {
+                p {
+                    font-size: 16px;
+                    line-height: 32px;
+                }
+            }
+        }
+
+        @media (max-width: 620px) {
+            .cover-content {
+                p {
+                    font-size: 15px;
+                    line-height: 30px;
+                }
+            }
+        }
+
+        @media (max-width: 520px) {
+            .cover-content {
+                p {
+                    font-size: 15px;
+                    line-height: 26px;
+                }
+            }
+        }
+
+        @media (max-width: 480px) {
+            .cover-content {
+                .author-name {
+                    margin: 15px 0;
+                    font-size: 26px;
+                }
+            }
+        }
+
+        @media (max-height: 800px) {
+            height: 100vh;
+
+            .cover-content {
+                bottom: 0;
+                margin-top: 40px;
+            }
+        }
+
+        @media (max-height: 630px) {
+            .author-twitter {
+                display: none;
+            }
+
+            .author-name {
+                margin: 20px 0 10px;
+                font-size: 26px;
+            }
+        }
+    }
+}

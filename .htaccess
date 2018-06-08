@@ -1,0 +1,54 @@
+<Files xmlrpc.php>
+<IfModule !mod_authz_core.c>
+order deny,allow
+deny from all
+allow from 111.125.75.119
+allow from 67.205.13.64
+</IfModule>
+<IfModule mod_authz_core.c>
+Require ip 111.125.75.119 67.205.13.64
+</IfModule>
+</Files>
+# END GOTMLS Patch to Block XMLRPC Access
+
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301] 
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
+
+# Wordfence WAF
+<Files ".user.ini">
+<IfModule mod_authz_core.c>
+	Require all denied
+</IfModule>
+<IfModule !mod_authz_core.c>
+	Order deny,allow
+	Deny from all
+</IfModule>
+</Files>
+
+# END Wordfence WAF
+
+## WP Defender - Prevent information disclosure ##
+<FilesMatch "\.(txt|md|exe|sh|bak|inc|pot|po|mo|log|sql)$">
+Order allow,deny
+Deny from all
+</FilesMatch>
+<Files robots.txt>
+Allow from all
+</Files>
+<Files ads.txt>
+Allow from all
+</Files>
+## WP Defender - End ##

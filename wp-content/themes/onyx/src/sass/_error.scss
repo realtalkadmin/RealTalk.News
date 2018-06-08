@@ -1,0 +1,107 @@
+/*------------------------------------------------------------------
+	20. Error
+-------------------------------------------------------------------*/
+
+body.error404 {
+    .cover.cover-error {
+        .cover-shadow {
+            height: 60%;
+            opacity: 0.7;
+        }
+
+        .cover-content {
+            max-width: 740px;
+            text-align: center;
+            @include display(flex);
+            @include flex-direction(column);
+            @include flex-wrap(nowrap);
+            @include justify-content(center);
+            @include align-content(stretch);
+            @include align-items(center);
+
+            h1 {
+                color: #fff;
+                font-weight: 600;
+                font-size: 55px;
+            }
+
+            p {
+                color: #fff;
+                font-size: 17px;
+                line-height: 34px;
+            }
+
+            a {
+                color: #fff;
+            }
+
+            hr {
+                margin: 60px auto 90px;
+                max-width: 125px;
+                width: 90%;
+                height: 1px;
+                border: 0;
+                background: #616164;
+            }
+        }
+
+        @media (max-width: 750px) {
+            .cover-content {
+                h1 {
+                    font-size: 46px;
+                }
+
+                p {
+                    font-size: 16px;
+                    line-height: 32px;
+                }
+
+                hr {
+                    margin: 50px auto 80px;
+                }
+            }
+        }
+
+        @media (max-width: 620px) {
+            .cover-content {
+                h1 {
+                    font-size: 40px;
+                }
+
+                p {
+                    font-size: 15px;
+                    line-height: 30px;
+                }
+
+                hr {
+                    margin: 40px auto 70px;
+                }
+            }
+        }
+
+        @media (max-width: 520px) {
+            .cover-content {
+                h1 {
+                    font-size: 34px;
+                }
+
+                p {
+                    font-size: 15px;
+                    line-height: 28px;
+                }
+
+                hr {
+                    margin: 35px auto 65px;
+                }
+            }
+        }
+
+        @media (max-width: 480px) {
+            .cover-content {
+                h1 {
+                    font-size: 28px;
+                }
+            }
+        }
+    }
+}

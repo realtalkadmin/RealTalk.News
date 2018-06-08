@@ -1,0 +1,39 @@
+
+---Downloaded files---
+The import files for: Demo 2 were successfully downloaded!
+Initial max execution time = 30
+Files info:
+Site URL = https://www.realtalk.news
+Data file = /home/realtalkadmin/realtalk.news/wp-content/themes/authentic/dist/demo/demo-content.xml
+Widget file = /home/realtalkadmin/realtalk.news/wp-content/themes/authentic/dist/demo/widgets.json
+Customizer file = /home/realtalkadmin/realtalk.news/wp-content/themes/authentic/dist/demo/customizer-2.dat
+Redux files:
+not defined!
+
+---Importing widgets---
+Default Sidebar : 
+
+Authentic: Posts - Recent Articles - Imported
+Categories - No Title - Imported
+
+Footer Sidebar 1 : 
+
+Calendar - Calendar - Imported
+
+Footer Sidebar 2 : 
+
+Custom Menu - Navigation - Imported
+Search - No Title - Imported
+
+Footer Sidebar 3 : 
+
+Archives - No Title - Imported
+Tag Cloud - No Title - Imported
+
+
+
+---Importing customizer settings---
+Customizer settings import finished!
+
+---pt-ocdi/after_import---
+

@@ -1,0 +1,121 @@
+/*------------------------------------------------------------------
+	30. Highlighter
+-------------------------------------------------------------------*/
+
+/**
+ * GitHub theme
+ *
+ * @author Craig Campbell
+ * @version 1.0.4
+ */
+
+pre {
+    margin: 40px 0;
+    padding: 20px 30px;
+    word-wrap: initial;
+    line-height: 19px;
+
+    @media (max-width: 780px) {
+        margin: 30px 0;
+    }
+}
+
+code,
+kbd,
+tt {
+    margin: 0 2px;
+    padding: 0 5px;
+    border: 1px solid #eaeaea;
+    font-size: 16px;
+    line-height: 34px;
+
+    @media (max-width: 780px) {
+        font-size: 15px;
+        line-height: 32px;
+    }
+}
+
+pre code {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+}
+
+pre,
+code,
+kbd,
+tt {
+    border: 1px solid #ebebf3;
+    border-radius: 3px;
+    color: #444;
+    font-family: Consolas, 'Liberation Mono', Courier, monospace;
+}
+
+pre,
+pre code {
+    font-size: 16px;
+}
+
+pre .comment {
+    color: #998;
+}
+
+pre .support {
+    color: #0086b3;
+}
+
+pre .tag,
+pre .tag-name {
+    color: navy;
+}
+
+pre .keyword,
+pre .css-property,
+pre .vendor-prefix,
+pre .sass,
+pre .class,
+pre .id,
+pre .css-value,
+pre .entity.function,
+pre .storage.function {
+    font-weight: bold;
+}
+
+pre .css-property,
+pre .css-value,
+pre .vendor-prefix,
+pre .support.namespace {
+    color: #333;
+}
+
+pre .constant.numeric,
+pre .keyword.unit,
+pre .hex-color {
+    color: #099;
+    font-weight: normal;
+}
+
+pre .entity.class {
+    color: #458;
+}
+
+pre .entity.id,
+pre .entity.function {
+    color: #900;
+}
+
+pre .attribute,
+pre .variable {
+    color: teal;
+}
+
+pre .string,
+pre .support.value {
+    color: #d14;
+    font-weight: normal;
+}
+
+pre .regexp {
+    color: #009926;
+}

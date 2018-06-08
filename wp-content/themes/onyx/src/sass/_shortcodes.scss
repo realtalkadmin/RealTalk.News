@@ -1,0 +1,67 @@
+/*------------------------------------------------------------------
+	34. Shortcodes
+-------------------------------------------------------------------*/
+
+.post-contents {
+    .shortprogress .percentage,
+    .shortbutton,
+    .alert {
+        line-height: normal;
+    }
+
+    .annotation img {
+        margin-bottom: 1%;
+    }
+
+    .grid {
+        overflow: hidden;
+        margin: 30px 0;
+
+        .half {
+            width: 47.5%;
+        }
+
+        .left {
+            float: left;
+            margin: 0 2.5% 0 0;
+        }
+
+        .right {
+            float: right;
+            margin: 0 0 0 2.5%;
+        }
+
+        p.left,
+        p.right {
+            font-weight: 400;
+        }
+
+        .left *:last-child,
+        .right *:last-child {
+            margin-bottom: 0;
+        }
+
+        .left *:first-child,
+        .right *:first-child {
+            margin-top: 0;
+        }
+
+        p {
+            clear: none;
+            font-weight: 300;
+        }
+
+        @media (max-width: 585px) {
+            .left,
+            .right {
+                float: none;
+                margin: 0;
+                width: 100%;
+            }
+
+            .right {
+                margin-top: 50px;
+            }
+        }
+    }
+}

@@ -1,0 +1,106 @@
+/*------------------------------------------------------------------
+	22. Category
+-------------------------------------------------------------------*/
+
+body.category,
+body.tag,
+body.archive {
+    .cover.cover-category {
+        height: 70vh;
+
+        .cover-shadow {
+            height: 70%;
+            opacity: 0.7;
+        }
+
+        .cover-content {
+            bottom: -60px;
+            max-width: 670px;
+            text-align: center;
+            @include display(flex);
+            @include flex-direction(column);
+            @include flex-wrap(nowrap);
+            @include justify-content(center);
+            @include align-content(stretch);
+            @include align-items(center);
+        }
+
+        hr {
+            margin: 0 0 40px;
+            max-width: 110px;
+            width: 90%;
+            height: 3px;
+            border: 0;
+            background: #9b9ba3;
+        }
+
+        .category-name {
+            margin: 0 0 40px;
+            color: #fff;
+            font-size: 55px;
+        }
+
+        .category-description,
+        p {
+            margin: 0 0 30px;
+            color: #d6d9dd;
+            font-size: 17px;
+            line-height: 37px;
+        }
+
+        @media (max-width: 750px) {
+            .cover-content {
+                .category-name {
+                    font-size: 46px;
+                }
+
+                p {
+                    font-size: 16px;
+                    line-height: 32px;
+                }
+            }
+        }
+
+        @media (max-width: 620px) {
+            .cover-content {
+                .category-name {
+                    font-size: 40px;
+                }
+
+                p {
+                    font-size: 15px;
+                    line-height: 30px;
+                }
+            }
+        }
+
+        @media (max-width: 520px) {
+            .cover-content {
+                .category-name {
+                    font-size: 34px;
+                }
+
+                p {
+                    font-size: 15px;
+                    line-height: 28px;
+                }
+            }
+        }
+
+        @media (max-width: 480px) {
+            .cover-content {
+                .category-name {
+                    font-size: 28px;
+                }
+            }
+        }
+
+        @media (max-height: 760px) {
+            height: 100vh;
+
+            .cover-content {
+                bottom: 0;
+            }
+        }
+    }
+}

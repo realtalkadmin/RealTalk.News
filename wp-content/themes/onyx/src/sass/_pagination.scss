@@ -1,0 +1,151 @@
+/*------------------------------------------------------------------
+	18. Pagination
+-------------------------------------------------------------------*/
+
+.pagination {
+	clear: both;
+    margin: 140px auto 80px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: $font_header;
+
+    @media (max-width: 1680px) {
+        margin: 7% auto 4%;
+    }
+}
+
+.pagination-ajax {
+    display: none;
+    width: 95%;
+    text-align: center;
+}
+
+.pagination-load-more {
+    display: inline-block;
+    padding: 21px 80px;
+    border-radius: 100px;
+    background: #373c41;
+    color: #fff;
+
+    i {
+        margin-right: 15px;
+    }
+
+    &:hover {
+        background: #262a2d;
+    }
+
+    @media (max-width: 1680px) {
+        font-size: 13px;
+    }
+}
+
+.pagination-current-page {
+    display: block;
+    clear: both;
+    margin-top: 25px;
+    color: #afb7be;
+
+    @media (max-width: 1680px) {
+        font-size: 13px;
+    }
+}
+
+.pagination-standard,
+.pagination-noresults {
+    position: relative;
+    overflow: hidden;
+    min-height: 50px;
+    text-align: center;
+
+    ul.page-numbers {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        @include transform(translate(-50%, -50%));
+
+        li {
+            display: inline-block;
+            float: left;
+            margin: 0 4px;
+        }
+
+        a,
+        span {
+            display: block;
+            width: 48px;
+            height: 48px;
+            border-radius: 90px;
+            background: #fff;
+            color: #373737;
+            text-align: center;
+            font-weight: 400;
+            line-height: 48px;
+        }
+
+        a:hover {
+            background: #c0bfc7;
+            color: #fff;
+        }
+
+        span {
+            background: #373c41;
+            color: #fff;
+            cursor: default;
+        }
+    }
+
+    .pagination-button {
+        display: inline-block;
+        padding: 21px 50px;
+        border-radius: 100px;
+        background: #373c41;
+        color: #fff;
+        font-size: 14px;
+        @include transition-default();
+
+        i {
+            margin-right: 15px;
+        }
+
+        &:hover {
+            background: #262a2d;
+        }
+    }
+
+    .pagination-newer {
+        float: left;
+
+        i {
+            margin-right: 15px;
+            margin-left: 0;
+        }
+    }
+
+    .pagination-older {
+        float: right;
+
+        i {
+            margin-right: 0;
+            margin-left: 15px;
+        }
+    }
+
+	@media (max-width: 960px) {
+		.page-numbers {
+			display: none;
+		}
+	}
+
+	@media (max-width: 575px) {
+		.pagination-older, .pagination-newer{
+			.main{
+				display: none;
+			}
+			i{
+				margin: 0;
+			}
+		}
+	}
+
+}

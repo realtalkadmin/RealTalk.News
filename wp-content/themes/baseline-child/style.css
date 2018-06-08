@@ -1,0 +1,170 @@
+/*
+Theme Name: Baseline Child Theme
+Theme URI: https://arraythemes.com/themes/baseline-wordpress-theme/
+Author: Array
+Author URI: https://arraythemes.com/
+Description: Baseline is an elegant, magazine-style theme that lets you quickly and easily create a beautiful site with any content. Baseline includes one, two and three column layouts, a customizable logo and header, finely-crafted typography and a snappy featured content drawer.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: baseline
+Template: baseline
+Domain Path: /languages/
+Tags: light, white, one-column, two-columns, three-columns, fluid-layout, responsive-layout, custom-colors, custom-menu, editor-style, featured-images, infinite-scroll, theme-options, translation-ready, post-slider, blog, photography, magazine, news, photoblogging, clean, minimal, modern, design, art, simple, travel, professional, contemporary, site-logo
+
+(C) 2016 Array, Inc.
+*/
+
+/*
+This is a starter style.css file for your child theme. For more
+information about child themes, visit the following web page:
+http://codex.wordpress.org/Child_Themes
+*/
+
+/* Add your CSS customizations below this line */
+
+@import url("http://www.realtalk.news/wp-content/themes/paperback-child/fonts.css");
+@import url('//fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i');
+@import url('//fonts.googleapis.com/css?family=Arimo');
+
+
+
+html, body, div, span, p, em, b, caption {
+  font-family: 'PT Serif', serif;
+}
+
+button {
+    font-family: 'Arimo', sans-serif;
+}
+
+h1, h2 {
+    font-family: 'Neue Haas Unica W1G', sans-serif;
+    font-weight: 800;
+	line-height: 1.1 !important;
+}
+
+.entry-large .entry-title, .page .entry-header .entry-title {
+    font-family: 'Neue Haas Unica W1G', sans-serif;
+    font-weight: bold;
+	line-height: 1.1 !important;
+    margin-bottom: 10%;
+}
+
+.featured-content .entry-title {
+    font-family: 'Neue Haas Unica W1G', sans-serif;
+    font-weight: bold;
+	line-height: 1.1 !important;
+    margin-bottom: 10% !important;
+}
+
+h3, h4 {
+    font-family: 'Neue Haas Unica W1G', sans-serif;
+    font-weight: 300;
+}
+
+h5, h6 {
+    font-family: 'Neue Haas Unica W1G', sans-serif;
+    font-weight: 400;
+}
+
+a .entry-large .meta-list {
+    font-family: 'Arimo', sans-serif;
+}
+
+span .meta-column .jp-related #jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post .jp-relatedposts-post-title a {
+    font-family: 'Arimo', sans-serif;
+}
+
+span .post-navigation .nav-label, .post-navigation .nav-date {
+    font-family: 'Arimo', sans-serif;
+}
+
+span .fixed-toggle .fixed-nav {
+    font-family: 'Source Code Pro', monospace;
+}
+
+.dropcap {
+    font-family: 'Butler', serif;
+    font-weight: bold;
+}
+
+blockquote {
+    font-family: 'Arimo', sans-serif;
+    font-weight: 500;
+}
+
+blockquote:before {
+    font-family: 'Druk', Impact, sans-serif;
+    font-weight: 900;
+}
+
+.comments-area blockquote {
+    font-family: 'Neue Haas Unica W1G', sans-serif;
+}
+
+pre {
+    font-family: 'Source Code Pro', 'Consolas', monospace;
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.button,
+.edd-submit.button,
+#edd-purchase-button,
+.widget_edd_cart_widget .edd_checkout a,
+.comment-navigation a,
+.drawer .tax-widget a,
+.su-button {
+    font-family: 'Arimo', sans-serif;
+}
+
+.main-navigation {
+    font-family: 'Arimo', sans-serif;
+}
+
+.post-navigation [rel="next"],
+.post-navigation [rel="prev"] {
+    font-family: 'Arimo', sans-serif;
+}
+
+.page-numbers {
+    font-family: 'Arimo', sans-serif;
+    font-weight: bold;
+}
+
+.pull-right,
+.pull-left,
+.pull-excerpt {
+    font-family: 'Arimo', sans-serif;
+    font-weight: normal;
+}
+
+.pull-right {
+    text-align: right !important;
+}
+
+.comment-cite {
+    font-family: 'Arimo', sans-serif;
+}
+
+.comment-time, .comment-edit-link {
+    font-family: 'Arimo', sans-serif;
+}
+
+.logged-in-as, .comment-notes {
+    font-family: 'Arimo', sans-serif;
+}
+
+.filter {
+    font-family: 'Arimo', sans-serif;
+}
+
+.site-title {
+    font-family: 'Arimo', sans-serif;
+}
+
+.site-description {
+    font-family: 'Arimo', sans-serif;
+}

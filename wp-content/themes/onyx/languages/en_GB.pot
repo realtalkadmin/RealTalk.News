@@ -1,0 +1,840 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Onyx\n"
+"POT-Creation-Date: 2016-05-02 23:45+0100\n"
+"PO-Revision-Date: 2016-05-02 23:47+0100\n"
+"Last-Translator: \n"
+"Language-Team: EckoThemes <support@ecko.me>\n"
+"Language: en_GB\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7\n"
+"X-Poedit-Basepath: onyx\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: esc_html_e;esc_js_e;esc_attr_e;esc_html__;esc_js__;"
+"esc_attr__;__;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:15
+msgid "Error"
+msgstr ""
+
+#: 404.php:15
+msgid "Not Found"
+msgstr ""
+
+#: 404.php:16
+msgid ""
+"The page you were looking for cannot be found, it may have been moved or no "
+"longer exists. The search below may help you find the desired page, or you "
+"can navigate back to the homepage by clicking"
+msgstr ""
+
+#: 404.php:16
+msgid "here"
+msgstr ""
+
+#: 404.php:20 layouts/overlay-search.php:13 searchform.php:10
+msgid "Search the Blog..."
+msgstr ""
+
+#: archive.php:27 category.php:20 search.php:20 tag.php:18
+msgid "Articles"
+msgstr ""
+
+#: comments.php:37
+msgid "There are currently no comments."
+msgstr ""
+
+#: comments.php:50
+msgid "Leave a Reply to"
+msgstr ""
+
+#: comments.php:51
+msgid "Cancel Reply"
+msgstr ""
+
+#: comments.php:52
+msgid "Post Comment"
+msgstr ""
+
+#: comments.php:53
+msgid "Add your comment here"
+msgstr ""
+
+#: comments.php:57
+msgid "Name"
+msgstr ""
+
+#: comments.php:57 comments.php:58 inc/tgm/class-tgm-plugin-activation.php:2159
+msgid "Required"
+msgstr ""
+
+#: comments.php:58
+msgid "Email"
+msgstr ""
+
+#: comments.php:59
+msgid "Website URL"
+msgstr ""
+
+#: functions.php:79
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:100 layouts/pagination.php:15 layouts/pagination.php:33
+msgid "No More Articles"
+msgstr ""
+
+#: functions.php:101
+msgid "Fetching Articles"
+msgstr ""
+
+#: functions.php:102 layouts/pagination.php:19
+msgid "Load More"
+msgstr ""
+
+#: functions.php:103
+msgid "Email Address"
+msgstr ""
+
+#: functions.php:104
+msgid "View Comments"
+msgstr ""
+
+#: functions.php:166
+msgid "Footer (Max 3. Widgets)"
+msgstr ""
+
+#: functions.php:168
+msgid "Appears in footer on all pages. Maximum of 3 widgets supported."
+msgstr ""
+
+#: functions.php:196
+msgid "Theme Post Options"
+msgstr ""
+
+#: functions.php:204
+msgid "Theme Page Options"
+msgstr ""
+
+#: functions.php:226
+msgid "Page Layout"
+msgstr ""
+
+#: functions.php:227
+msgid "Configure the page layout of the individual post/custom page."
+msgstr ""
+
+#: functions.php:229 functions.php:1277
+msgid "Default"
+msgstr ""
+
+#: functions.php:231 functions.php:1278
+msgid "Sidebar"
+msgstr ""
+
+#: functions.php:233 functions.php:1279
+msgid "Sidebar (Left)"
+msgstr ""
+
+#: functions.php:235 functions.php:727 functions.php:1280
+msgid "Single Column"
+msgstr ""
+
+#: functions.php:239
+msgid "Post Feature"
+msgstr ""
+
+#: functions.php:240
+msgid "Configure if this post is shown on the front-page cover."
+msgstr ""
+
+#: functions.php:243
+msgid "Enable Post Feature"
+msgstr ""
+
+#: functions.php:248
+msgid "Post Background Image Style"
+msgstr ""
+
+#: functions.php:249
+msgid ""
+"Configure if this post uses the alternative background image post style "
+"within the post-list. This option is only supported for 'Standard' format "
+"posts."
+msgstr ""
+
+#: functions.php:252
+msgid "Enable Post Background Image Style"
+msgstr ""
+
+#: functions.php:256
+msgid ""
+"More information on these post/page options can be found within the theme "
+"documentation under 'Post Formatting'."
+msgstr ""
+
+#: functions.php:388 functions.php:398
+msgid "Latest Articles"
+msgstr ""
+
+#: functions.php:424
+msgid "Category HEX Color Value"
+msgstr ""
+
+#: functions.php:427
+msgid ""
+"Enter a color to associate with this category. The color must be in HEX "
+"format (E.g. 009bbb )"
+msgstr ""
+
+#: functions.php:515 layouts/post-author-profile.php:13
+msgid "Author"
+msgstr ""
+
+#: functions.php:708
+msgid "This section contains theme layout options."
+msgstr ""
+
+#: functions.php:722
+msgid "Layout Style"
+msgstr ""
+
+#: functions.php:725
+msgid "Standard (Sidebar)"
+msgstr ""
+
+#: functions.php:726
+msgid "Masonry"
+msgstr ""
+
+#: functions.php:741
+msgid "Color Scheme"
+msgstr ""
+
+#: functions.php:744
+msgid "Light Theme"
+msgstr ""
+
+#: functions.php:745
+msgid "Dark Theme"
+msgstr ""
+
+#: functions.php:757
+msgid "Default Cover Background Image"
+msgstr ""
+
+#: functions.php:771
+msgid "This section contains Top bar options."
+msgstr ""
+
+#: functions.php:783
+msgid "Stick to Top (on scroll)"
+msgstr ""
+
+#: functions.php:795
+msgid "Hide Navigation"
+msgstr ""
+
+#: functions.php:807
+msgid "Top Bar Logo"
+msgstr ""
+
+#: functions.php:821
+msgid "Top Bar Logo (Retina - @2x file name)"
+msgstr ""
+
+#: functions.php:835
+msgid "This section contains Blog Cover options."
+msgstr ""
+
+#: functions.php:847
+msgid "Blog Cover Logo"
+msgstr ""
+
+#: functions.php:861
+msgid "Blog Cover Logo (Retina - @2x file name)"
+msgstr ""
+
+#: functions.php:875
+msgid "Hide Posts"
+msgstr ""
+
+#: functions.php:887
+msgid "Hide Post Category"
+msgstr ""
+
+#: functions.php:899
+msgid "Hide Frontpage Cover"
+msgstr ""
+
+#: functions.php:911
+msgid "Use Basic Style (Masonry & Standard)"
+msgstr ""
+
+#: functions.php:923
+msgid "This section contains Filter Bar options."
+msgstr ""
+
+#: functions.php:935
+msgid "Hide Filter Bar"
+msgstr ""
+
+#: functions.php:947
+msgid "Hide Filter Options"
+msgstr ""
+
+#: functions.php:959
+msgid "Hide Search"
+msgstr ""
+
+#: functions.php:972
+msgid "This section contains Post List options."
+msgstr ""
+
+#: functions.php:984 functions.php:1140
+msgid "Hide Category"
+msgstr ""
+
+#: functions.php:996 functions.php:1152
+msgid "Hide Author"
+msgstr ""
+
+#: functions.php:1008 functions.php:1164 functions.php:1316
+msgid "Hide Date"
+msgstr ""
+
+#: functions.php:1020 functions.php:1340
+msgid "Hide Meta"
+msgstr ""
+
+#: functions.php:1032
+msgid "Hide Excerpt"
+msgstr ""
+
+#: functions.php:1044
+msgid "Hide 'Read More'"
+msgstr ""
+
+#: functions.php:1056 functions.php:1176 functions.php:1328
+msgid "Hide Comment Count"
+msgstr ""
+
+#: functions.php:1068 functions.php:1188
+msgid "Hide Likes"
+msgstr ""
+
+#: functions.php:1080
+msgid "This section contains Pagination options."
+msgstr ""
+
+#: functions.php:1092
+msgid "Enable AJAX Post Loading"
+msgstr ""
+
+#: functions.php:1104
+msgid "Hide 'Older/Newer' Buttons"
+msgstr ""
+
+#: functions.php:1116
+msgid "Hide Page Numbers"
+msgstr ""
+
+#: functions.php:1128
+msgid "This section contains Post Page options."
+msgstr ""
+
+#: functions.php:1200
+msgid "Hide Social Share"
+msgstr ""
+
+#: functions.php:1212
+msgid "Hide Tags"
+msgstr ""
+
+#: functions.php:1224
+msgid "Hide Related Posts"
+msgstr ""
+
+#: functions.php:1236 functions.php:1304
+msgid "Hide Author Profile"
+msgstr ""
+
+#: functions.php:1248 functions.php:1364
+msgid "Hide Comments"
+msgstr ""
+
+#: functions.php:1260
+msgid "Hide 'Next/Previous' Posts"
+msgstr ""
+
+#: functions.php:1274
+msgid "Default Layout"
+msgstr ""
+
+#: functions.php:1292
+msgid "This section contains Custom Page options."
+msgstr ""
+
+#: functions.php:1352
+msgid "Hide Social Share Options"
+msgstr ""
+
+#: functions.php:1376
+msgid "Hide Page Title"
+msgstr ""
+
+#: functions.php:1387
+msgid "Subscription (Footer)"
+msgstr ""
+
+#: functions.php:1388
+msgid "This section contains inline post list subscription options."
+msgstr ""
+
+#: functions.php:1400
+msgid "Enable Footer Subscription"
+msgstr ""
+
+#: functions.php:1411
+msgid "Title"
+msgstr ""
+
+#: functions.php:1423
+msgid "Description"
+msgstr ""
+
+#: functions.php:1435
+msgid "MailChimp Embed Code"
+msgstr ""
+
+#: functions.php:1448
+msgid "This section contains Footer options."
+msgstr ""
+
+#: functions.php:1460
+msgid "Hide Footer"
+msgstr ""
+
+#: functions.php:1472
+msgid "Hide Widgets"
+msgstr ""
+
+#: functions.php:1484
+msgid "Hide Copyright"
+msgstr ""
+
+#: functions.php:1496
+msgid ""
+"This section contains Advert & AdSense options. These options are supported "
+"on the Standard and Single-Column layouts."
+msgstr ""
+
+#: functions.php:1508
+msgid "Enable Advert/AdSense Support"
+msgstr ""
+
+#: functions.php:1521
+msgid "Show Every (X) Posts"
+msgstr ""
+
+#: functions.php:1540
+msgid "Advert Emebed Code (728x90)"
+msgstr ""
+
+#: functions.php:1551
+msgid "This section contains Error Page options (e.g. 404)."
+msgstr ""
+
+#: functions.php:1563
+msgid "Error Cover Background Image"
+msgstr ""
+
+#: inc/eckoframework/eckoframework.php:392
+msgid " ago"
+msgstr ""
+
+#: inc/post-like/post-like.php:31 inc/post-like/post-like.php:224
+#: inc/post-like/post-like.php:338
+msgid "Like"
+msgstr ""
+
+#: inc/post-like/post-like.php:32 inc/post-like/post-like.php:220
+msgid "Unlike"
+msgstr ""
+
+#: inc/post-like/post-like.php:46
+msgid "Not permitted"
+msgstr ""
+
+#: inc/post-like/post-like.php:354
+msgid "You Like:"
+msgstr ""
+
+#: inc/post-like/post-like.php:380
+msgid "You do not like anything yet."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:333
+msgid "Install Required Plugins"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:334
+msgid "Install Plugins"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:335
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:336
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:397
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:398
+msgid "Return to the dashboard"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:399
+#: inc/tgm/class-tgm-plugin-activation.php:3021
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:400
+msgid "The following plugin was activated successfully:"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:401
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:402
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:403
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:404
+msgid "Dismiss this notice"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:405
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:520
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:521
+msgid "Update Required"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:820
+#: inc/tgm/class-tgm-plugin-activation.php:3430
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:927
+msgid ""
+"The remote plugin package does not contain a folder with the desired slug "
+"and renaming did not work."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:927
+#: inc/tgm/class-tgm-plugin-activation.php:930
+msgid ""
+"Please contact the plugin provider and ask them to package their plugin "
+"according to the WordPress guidelines."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:930
+msgid ""
+"The remote plugin package consists of more than one file, but the files are "
+"not packaged in a folder."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2162
+msgid "Recommended"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2178
+msgid "WordPress Repository"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2181
+msgid "External Source"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2184
+msgid "Pre-Packaged"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2201
+msgid "Not Installed"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2205
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2207
+msgid "Active"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2213
+msgid "Required Update not Available"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2216
+msgid "Requires Update"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2219
+msgid "Update recommended"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2371
+msgid "Installed version:"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2379
+msgid "Minimum required version:"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2391
+msgid "Available version:"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2414
+#, php-format
+msgid ""
+"No plugins to install, update or activate. <a href=\"%1$s\">Return to the "
+"Dashboard</a>"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2428
+msgid "Plugin"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2429
+msgid "Source"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2430
+msgid "Type"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2434
+msgid "Version"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2435
+msgid "Status"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2562
+msgid "Upgrade message from the plugin author:"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2595
+msgid "Install"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2601
+msgid "Update"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2604
+msgid "Activate"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2635
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2637
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2673
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2675
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2780
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2806
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:3020
+msgid "Plugin activation failed."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:3354
+#, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:3356
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:3357
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:3361
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:3362
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:3362
+#: inc/tgm/class-tgm-plugin-activation.php:3368
+msgid "Show Details"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:3362
+#: inc/tgm/class-tgm-plugin-activation.php:3368
+msgid "Hide Details"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:3363
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:3364
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:3367
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:3368
+#, php-format
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:3369
+msgid "All installations have been completed."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:3370
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: layouts/cover-home.php:48 layouts/overlay-media.php:16
+#: postformat/gallery.php:30 postformat/link.php:37
+#: postformat/standard-background.php:35 postformat/standard.php:36
+#: postformat/video.php:48
+msgid "Read More"
+msgstr ""
+
+#: layouts/filter-bar-author.php:14
+msgid "Authors"
+msgstr ""
+
+#: layouts/filter-bar-author.php:15 layouts/filter-bar-category.php:15
+msgid "All"
+msgstr ""
+
+#: layouts/filter-bar-category.php:14
+msgid "Categories"
+msgstr ""
+
+#: layouts/footer-copyright.php:14
+msgid "Copyright"
+msgstr ""
+
+#: layouts/footer-copyright.php:14
+msgid "All rights reserved"
+msgstr ""
+
+#: layouts/footer-copyright.php:20
+msgid "Published with"
+msgstr ""
+
+#: layouts/footer-next-post.php:18
+msgid "Next Post"
+msgstr ""
+
+#: layouts/pagination.php:20
+msgid "Page"
+msgstr ""
+
+#: layouts/pagination.php:20
+msgid "of"
+msgstr ""
+
+#: layouts/pagination.php:25
+msgid "Newer Posts"
+msgstr ""
+
+#: layouts/pagination.php:27
+msgid "Older Posts"
+msgstr ""
+
+#: layouts/post-footer.php:17
+msgid "Share"
+msgstr ""
+
+#: layouts/post-related.php:31
+msgid "Related Article"
+msgstr ""
+
+#: layouts/post-related.php:35
+msgid "Read Article"
+msgstr ""
+
+#: no-results.php:13 no-results.php:17
+msgid "No Result"
+msgstr ""
+
+#: no-results.php:13
+msgid "Please try another search query."
+msgstr ""
+
+#: no-results.php:17
+msgid "Please try another query."
+msgstr ""
+
+#: postformat/link-masonry.php:24 postformat/link.php:32
+msgid "External Link"
+msgstr ""
+
+#: search.php:15
+msgid "Search Result"
+msgstr ""

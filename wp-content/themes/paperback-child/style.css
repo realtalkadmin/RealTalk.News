@@ -1,0 +1,206 @@
+/**
+ * Theme Name:     Paperback Child
+ * Author:         Array
+ * Template:       paperback
+ * Text Domain:	   paperback-child
+ * Description:    Paperback is a magazine-style theme that empowers you to quickly and easily create beautiful, immersive content with images, galleries, video, audio and more. Make your content even more engaging and discoverable with the featured post carousel and category mega menu.
+ */
+@import url("fonts.css");
+
+.menu {
+  font-family: 'Neue Haas Unica W1G', sans-serif;
+}
+
+p, body, html {
+  font-family: 'PT Serif', serif;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+button {
+    font-family: 'Neue Haas Unica W1G', sans-serif;
+}
+
+
+h1, h2 {
+    font-family: 'Neue Haas Unica W1G', sans-serif;
+}
+
+h2 {
+    font-weight: 500;
+}
+
+h3 {
+    font-family: 'Neue Haas Unica W1G', sans-serif;
+    font-weight: 500;
+}
+
+h4 {
+    font-family: 'Neue Haas Unica W1G', sans-serif;
+    font-weight: normal;
+}
+
+h5, h6 {
+    font-family: 'Neue Haas Unica W1G', serif;
+    font-weight: normal;
+}
+
+h1 {
+  font-size: 36px;
+  }
+
+h2 {
+  font-size: 28px;
+  line-height: 1.1;
+}
+@media (max-width: 600px) {
+  h2 {
+    font-size: 24px;
+  }
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 1.1;
+  font-weight: 800;
+}
+@media (max-width: 600px) {
+  h3 {
+    font-size: 21px;
+  }
+}
+
+h4 {
+  font-size: 21px;
+  line-height: 1.1;
+  font-weight: 800;
+}
+@media (max-width: 600px) {
+  h4 {
+    font-size: 18px;
+  }
+}
+
+h5 {
+  font-size: 18px;
+  line-height: 1.2;
+}
+@media (max-width: 600px) {
+  h5 {
+    font-size: 16px;
+  }
+}
+
+h6 {
+  font-size: 16px;
+  line-height: 1.2;
+}
+@media (max-width: 600px) {
+  h6 {
+    font-size: 16px;
+  }
+}
+
+.dropcap {
+    font-family: 'Butler', serif;
+    font-weight: bold;
+}
+
+blockquote {
+    font-family: 'Neue Haas Unica W1G', sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 1.1;
+}
+
+blockquote:before {
+    font-family: 'Druk', Impact, sans-serif;
+    font-weight: 900;
+    font-size: 142px;
+}
+
+.comments-area blockquote {
+    font-family: 'Neue Haas Unica W1G', sans-serif;
+}
+
+pre {
+    font-family: 'Source Code Pro', 'Consolas', monospace;
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.button,
+.edd-submit.button,
+#edd-purchase-button,
+.widget_edd_cart_widget .edd_checkout a,
+.comment-navigation a,
+.drawer .tax-widget a,
+.su-button {
+    font-family: 'Neue Haas Unica W1G', sans-serif;
+}
+
+.main-navigation {
+    font-family: 'Neue Haas Unica W1G', sans-serif;
+}
+
+.post-navigation [rel="next"],
+.post-navigation [rel="prev"] {
+    font-family: 'Neue Haas Unica W1G', sans-serif;
+}
+
+.page-numbers {
+    font-family: 'Druk', Impact, sans-serif;
+    font-weight: 900;
+}
+
+.pull-right,
+.pull-left,
+.pull-excerpt {
+    font-family: 'Neue Haas Unica W1G', sans-serif;
+    font-weight: normal;
+    line-height: 1.1;
+}
+
+.pull-right {
+    text-align: right !important;
+}
+
+.comment-cite {
+    font-family: 'Neue Haas Unica W1G', sans-serif;
+}
+
+.comment-time, .comment-edit-link {
+    font-family: 'Neue Haas Unica W1G', sans-serif; 
+}
+
+.logged-in-as, .comment-notes {
+    font-family: 'Neue Haas Unica W1G', sans-serif; 
+}
+
+.filter {
+    font-family: 'Neue Haas Unica W1G', sans-serif;    
+}
+
+.site-title {
+    font-family: 'Neue Haas Unica W1G', sans-serif;
+}
+
+.site-description {
+    font-family: 'PT Serif', serif;
+}
+
+.full-post .entry-title{
+    font-family: 'Neue Haas Unica W1G', sans-serif;
+    font-weight: 900;
+    font-size: 72px;
+}
+@media (max-width: 800px) {
+  .full-post .entry-title {
+    font-size: 46px;
+  }
+.hero-posts .hero-post .entry-title {
+    font-size: 48px;
+}
+#post-1913 .hero-posts rslides rslides1 {display: none;}

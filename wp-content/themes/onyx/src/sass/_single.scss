@@ -1,0 +1,200 @@
+/*------------------------------------------------------------------
+	26. Single
+-------------------------------------------------------------------*/
+
+body.single,
+body.page {
+    &.post-basic-layout {
+        .page-container {
+            padding-top: 200px;
+        }
+
+        .post-body {
+            margin-top: 0 !important;
+        }
+
+        .top-bar {
+            border-bottom: 0;
+            background: #0d0d0e;
+        }
+
+        @media (max-width: 1050px) {
+            .page-container {
+                padding-top: calc(5% + 120px);
+            }
+        }
+    }
+
+    .page-container {
+        padding: 120px 0 200px;
+    }
+
+    .cover.cover-single {
+        height: 90vh;
+    }
+
+    .cover .cover-shadow {
+        opacity: 0.7;
+    }
+
+    .cover-content {
+        text-align: left;
+		-js-display: flex;
+        @include display(flex);
+        @include flex-direction(column);
+        @include flex-wrap(nowrap);
+        @include justify-content(center);
+        @include align-content(stretch);
+        @include align-items(flex-start);
+
+        .post-info {
+            max-width: 940px;
+            width: 100%;
+            @include animation(slidedownin 0.5s ease-in-out);
+        }
+
+        .post-category {
+            padding: 15px 50px;
+            border-radius: 100px;
+            background: #393947;
+            color: #f3f5f8;
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 13px;
+            font-family: $font_header;
+        }
+
+        .post-title {
+            margin: 50px 0 40px;
+            color: #fff;
+        }
+
+        .post-likes {
+            .sl-button {
+                .sl-icon {
+                    display: inline-block;
+                    margin-right: 8px;
+                    width: 14px;
+                    height: 14px;
+                    vertical-align: -3px;
+                    fill: #848991;
+                    @include transition(fill 0.25s ease-in-out);
+                }
+
+                .sl-count {
+                    display: inline-block;
+                    vertical-align: -1px;
+                }
+            }
+
+            .sl-button.liked {
+                .sl-icon {
+                    fill: #fd5c63;
+                }
+            }
+        }
+
+        .post-meta {
+            display: inline-block;
+            clear: both;
+            overflow: hidden;
+            color: #b4bcca;
+            list-style: none;
+            text-transform: uppercase;
+            font-size: 13px;
+            font-family: $font_header;
+
+            li {
+                float: left;
+                margin-right: 15px;
+
+                &:after {
+                    margin-left: 15px;
+                    content: '|';
+                    opacity: 0.6;
+                }
+
+                &:last-child:after {
+                    display: none;
+                }
+            }
+
+            a {
+                color: #b4bcca;
+
+                &:hover {
+                    color: #fff;
+                }
+            }
+
+            i {
+                margin-right: 10px;
+            }
+        }
+    }
+
+    @media (max-width: 1920px) {
+        .page-container {
+            padding: 5% 0;
+        }
+    }
+
+    @media (max-width: 880px) {
+        .page-container {
+            padding: 5% 0;
+        }
+    }
+
+    @media (max-width: 1260px) {
+        .page-sidebar {
+            display: none;
+        }
+
+        .page-contents {
+            float: none;
+            width: 100%;
+        }
+
+        .cover-content {
+            text-align: center;
+
+            .post-info {
+                margin: 0 auto;
+            }
+        }
+    }
+
+    @media (max-width: 1120px) {
+        .cover-content {
+            .post-info {
+                width: 80%;
+            }
+        }
+    }
+
+    @media (max-width: 780px) {
+        .cover-content {
+            .post-info {
+                width: 95%;
+            }
+        }
+    }
+
+    @media (max-width: 720px) {
+        .cover-content {
+            .post-meta {
+                display: none;
+            }
+        }
+    }
+
+    @media (max-height: 760px) {
+        .cover.cover-single {
+            height: 100vh;
+        }
+
+        .cover-content {
+            margin-top: 80px;
+        }
+    }
+}

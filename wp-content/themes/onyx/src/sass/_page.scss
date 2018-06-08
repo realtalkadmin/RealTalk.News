@@ -1,0 +1,17 @@
+/*------------------------------------------------------------------
+	27. Page
+-------------------------------------------------------------------*/
+
+body.page {
+    .post-body .post-info h1 {
+        margin-top: 0;
+    }
+
+    .cover-content .post-meta .post-likes {
+        display: none;
+    }
+
+    .post-header .post-meta .post-likes {
+        display: none;
+    }
+}

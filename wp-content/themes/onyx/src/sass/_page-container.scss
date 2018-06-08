@@ -1,0 +1,32 @@
+/*------------------------------------------------------------------
+	11. Page Container
+-------------------------------------------------------------------*/
+
+.page-container {
+    padding: 110px 0;
+
+    .page-contents {
+        float: left;
+        width: 65.3125%;
+    }
+
+    .page-sidebar {
+        float: right;
+        padding-left: $layout_base_spacing;
+        width: 30.8125%;
+    }
+
+    @media (max-width: 1920px) {
+        padding: 4.5% 0;
+    }
+
+    @media (max-width: 1680px) {
+        .page-sidebar {
+            padding-left: 0;
+        }
+    }
+
+    @media (max-width: 880px) {
+        padding: 5% 0;
+    }
+}
