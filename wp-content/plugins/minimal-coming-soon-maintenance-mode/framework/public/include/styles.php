@@ -46,7 +46,7 @@ if ( ! empty( $options['header_font'] ) || ! empty( $options['header_font_size']
 
 // Secondary: font, size, and color
 if ( ! empty( $options['secondary_font'] ) || ! empty( $options['secondary_font_size'] ) || ! empty( $options['secondary_font_color'] ) ) {
-	echo '.secondary-text{';
+	echo '.gdpr_consent, .secondary-text{';
 
 	// secondary font
 	if ( ! empty( $options['secondary_font'] ) ) {

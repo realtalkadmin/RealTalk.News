@@ -60,7 +60,7 @@
 							echo '<p class="signals-form-help-block">' . __( 'It seems that there is no list created for this account. Create one on the MailChimp website and then try again.', 'signals' ) . '</p>';
 						} else {
 							echo '<select name="signals_csmm_list" id="signals_csmm_list">';
-
+              echo '<option value="">- select a mailing list -</option>';
 							foreach ( $signals_lists['data'] as $signals_single_list ) {
 								echo '<option value="' . $signals_single_list['id'] . '"' . selected( $signals_single_list['id'], $signals_csmm_options['mailchimp_list'] ) . '>' . $signals_single_list['name'].'</option>';
 							}

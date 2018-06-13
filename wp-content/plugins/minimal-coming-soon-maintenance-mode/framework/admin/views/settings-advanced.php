@@ -12,7 +12,7 @@
 <div class="signals-tile" id="advanced">
 	<div class="signals-tile-body">
 		<div class="signals-tile-title"><?php _e( 'ADVANCED', 'signals' ); ?></div>
-		<p><?php _e( 'You can add custom HTML &amp; CSS in this section. Making wrong changes over here will affect the working of the plugin.', 'signals' ); ?></p>
+		<p><?php _e( 'Please double-check any custom code you enter in the settings below. Any typos or mistakes will affect the appearance of the page.', 'signals' ); ?></p>
 
 
 		<div class="signals-section-content">
@@ -50,6 +50,17 @@
 
 				<p class="signals-form-help-block"><?php _e( 'Custom CSS for the plugin goes over here.', 'signals' ); ?></p>
 			</div>
+
+      <div class="signals-double-group signals-clearfix">
+      <div class="signals-form-group">
+        <label for="signals_csmm_disable_adminbar" class="signals-strong"><?php _e( 'Disable Maintenance Mode Toolbar Menu', 'signals' ); ?></label>
+        <input type="checkbox" class="signals-form-ios" id="signals_csmm_disable_adminbar" name="signals_csmm_disable_adminbar" value="1"<?php checked( '1', $signals_csmm_options['disable_adminbar'] ); ?>>
+
+        <p class="signals-form-help-block"><?php _e( 'By default, a helpfull Maintenance Mode menu and status are added to the admin and front-end toolbar. If your toolbar is too crowded, disable the menu.', 'signals' ); ?></p>
+      </div>
+
+      </div>
+
 		</div>
 	</div>
 </div><!-- #advanced -->

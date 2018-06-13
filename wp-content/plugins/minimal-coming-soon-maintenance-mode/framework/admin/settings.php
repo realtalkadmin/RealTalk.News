@@ -106,6 +106,13 @@ function csmm_admin_settings() {
 			$tmp_options['disabled'] = '2';
 		endif;
 
+    // Checking whether the disable status bar menu option is checked or not
+    if ( isset( $_POST['signals_csmm_disable_adminbar'] ) ) :
+      $tmp_options['disable_adminbar'] = '1';
+    else :
+      $tmp_options['disable_adminbar'] = '0';
+    endif;
+
 
 		// Saving the record to the database
 		$update_options = array(
@@ -147,7 +154,8 @@ function csmm_admin_settings() {
 			'antispam_font_color' 	=> strip_tags( $_POST['signals_csmm_antispam_color'] ),
 
 			'input_text' 			=> strip_tags( $_POST['signals_csmm_input_text'] ),
-			'button_text' 			=> strip_tags( $_POST['signals_csmm_button_text'] ),
+      'button_text'       => strip_tags( $_POST['signals_csmm_button_text'] ),
+			'gdpr_text' 			=> $_POST['signals_csmm_gdpr_text'],
 			'ignore_form_styles' 	=> $tmp_options['form_styles'],
 			'input_font_size'		=> strip_tags( $_POST['signals_csmm_input_size'] ),
 			'button_font_size'		=> strip_tags( $_POST['signals_csmm_button_size'] ),
@@ -167,7 +175,8 @@ function csmm_admin_settings() {
 			'error_color'			=> strip_tags( $_POST['signals_csmm_error_color'] ),
       'form_placeholder_color'      => strip_tags( $_POST['form_placeholder_color'] ),
 
-			'disable_settings' 		=> $tmp_options['disabled'],
+      'disable_settings'     => $tmp_options['disabled'],
+			'disable_adminbar' 		=> $tmp_options['disable_adminbar'],
 			'custom_html'			=> $_POST['signals_csmm_html'], // Not sanitizing the HTML and CSS provided by the admin
 			'custom_css'			=> $_POST['signals_csmm_css']  // Giving full freedom to them :)
 		);
@@ -193,6 +202,9 @@ function csmm_admin_settings() {
     }
     if (isset($GLOBALS['wp_fastest_cache']) && method_exists($GLOBALS['wp_fastest_cache'], 'deleteCache')) {
       $GLOBALS['wp_fastest_cache']->deleteCache(true);
+    }
+    if (is_callable(array('Swift_Performance_Cache', 'clear_all_cache'))) {
+      Swift_Performance_Cache::clear_all_cache();
     }
 	}
 

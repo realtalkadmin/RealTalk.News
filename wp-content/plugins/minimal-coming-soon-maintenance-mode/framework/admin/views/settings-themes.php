@@ -1,5 +1,6 @@
 <?php
-$themes = array (
+$themes =
+array (
   0 =>
   array (
     'type' => 'CSMM PRO',
@@ -25,6 +26,17 @@ $themes = array (
   2 =>
   array (
     'type' => 'CSMM PRO',
+    'version' => '15.17',
+    'last_edit' => 'Sat, 09 Jun 2018 13:26:02 +0000',
+    'name' => 'Beach',
+    'description' => '',
+    'frontpage' => '1',
+    'status' => 'pro',
+    'name_clean' => 'beach',
+  ),
+  3 =>
+  array (
+    'type' => 'CSMM PRO',
     'version' => '5.05',
     'last_edit' => 'Wed, 28 Feb 2018 10:30:46 +0000',
     'name' => 'Bicycle Race',
@@ -33,7 +45,7 @@ $themes = array (
     'status' => 'agency',
     'name_clean' => 'bicycle-race',
   ),
-  3 =>
+  4 =>
   array (
     'type' => 'CSMM PRO',
     'version' => '5.005',
@@ -44,7 +56,7 @@ $themes = array (
     'status' => 'agency',
     'name_clean' => 'bitcoin-miners',
   ),
-  4 =>
+  5 =>
   array (
     'type' => 'CSMM PRO',
     'version' => '15.17',
@@ -55,7 +67,7 @@ $themes = array (
     'status' => 'agency',
     'name_clean' => 'blogging',
   ),
-  5 =>
+  6 =>
   array (
     'type' => 'CSMM PRO',
     'version' => '5.005',
@@ -66,7 +78,7 @@ $themes = array (
     'status' => 'agency',
     'name_clean' => 'book-lovers',
   ),
-  6 =>
+  7 =>
   array (
     'type' => 'CSMM PRO',
     'version' => '5.001',
@@ -77,18 +89,18 @@ $themes = array (
     'status' => 'agency',
     'name_clean' => 'business-company',
   ),
-  7 =>
+  8 =>
   array (
     'type' => 'CSMM PRO',
-    'version' => '5.14',
-    'last_edit' => 'Thu, 22 Mar 2018 10:49:47 +0000',
+    'version' => '15.17',
+    'last_edit' => 'Wed, 25 Apr 2018 11:06:41 +0000',
     'name' => 'Business',
     'description' => 'Andrea',
     'frontpage' => '1',
     'status' => 'agency',
     'name_clean' => 'business',
   ),
-  8 =>
+  9 =>
   array (
     'type' => 'CSMM PRO',
     'version' => '5.14',
@@ -99,7 +111,7 @@ $themes = array (
     'status' => 'agency',
     'name_clean' => 'clouds-screensaver-video',
   ),
-  9 =>
+  10 =>
   array (
     'type' => 'CSMM PRO',
     'version' => '5.005',
@@ -110,7 +122,18 @@ $themes = array (
     'status' => 'agency',
     'name_clean' => 'coffee-shop',
   ),
-  10 =>
+  11 =>
+  array (
+    'type' => 'CSMM PRO',
+    'version' => '15.17',
+    'last_edit' => 'Fri, 04 May 2018 08:57:40 +0000',
+    'name' => 'Cold Lake',
+    'description' => '',
+    'frontpage' => '1',
+    'status' => 'agency',
+    'name_clean' => 'cold-lake',
+  ),
+  12 =>
   array (
     'type' => 'CSMM PRO',
     'version' => '5.005',
@@ -121,7 +144,7 @@ $themes = array (
     'status' => 'pro',
     'name_clean' => 'default',
   ),
-  11 =>
+  13 =>
   array (
     'type' => 'CSMM PRO',
     'version' => '15.17',
@@ -132,7 +155,7 @@ $themes = array (
     'status' => 'agency',
     'name_clean' => 'dental-clinic',
   ),
-  12 =>
+  14 =>
   array (
     'type' => 'CSMM PRO',
     'version' => '5.001',
@@ -143,7 +166,7 @@ $themes = array (
     'status' => 'agency',
     'name_clean' => 'dog-training-and-behavior-consulting',
   ),
-  13 =>
+  15 =>
   array (
     'type' => 'CSMM PRO',
     'version' => '15.05',
@@ -154,7 +177,18 @@ $themes = array (
     'status' => 'agency',
     'name_clean' => 'flower-shop',
   ),
-  14 =>
+  16 =>
+  array (
+    'type' => 'CSMM PRO',
+    'version' => '15.17',
+    'last_edit' => 'Wed, 02 May 2018 09:37:48 +0000',
+    'name' => 'Food Blog',
+    'description' => '',
+    'frontpage' => '1',
+    'status' => 'pro',
+    'name_clean' => 'food-blog',
+  ),
+  17 =>
   array (
     'type' => 'CSMM PRO',
     'version' => '15.17',
@@ -165,7 +199,7 @@ $themes = array (
     'status' => 'pro',
     'name_clean' => 'homemade-chocolate-gifts',
   ),
-  15 =>
+  18 =>
   array (
     'type' => 'CSMM PRO',
     'version' => '15.05',
@@ -176,7 +210,7 @@ $themes = array (
     'status' => 'agency',
     'name_clean' => 'interior-design',
   ),
-  16 =>
+  19 =>
   array (
     'type' => 'CSMM PRO',
     'version' => '5.14',
@@ -187,7 +221,7 @@ $themes = array (
     'status' => 'agency',
     'name_clean' => 'journey-video',
   ),
-  17 =>
+  20 =>
   array (
     'type' => 'CSMM PRO',
     'version' => '15.17',
@@ -198,18 +232,18 @@ $themes = array (
     'status' => 'pro',
     'name_clean' => 'lego-bricks',
   ),
-  18 =>
+  21 =>
   array (
     'type' => 'CSMM PRO',
-    'version' => '5.005',
-    'last_edit' => 'Fri, 23 Feb 2018 11:58:49 +0000',
+    'version' => '15.17',
+    'last_edit' => 'Wed, 25 Apr 2018 11:04:55 +0000',
     'name' => 'Lonely Road',
     'description' => 'Andrea',
     'frontpage' => '1',
     'status' => 'agency',
     'name_clean' => 'lonely-road',
   ),
-  19 =>
+  22 =>
   array (
     'type' => 'CSMM PRO',
     'version' => '15.17',
@@ -220,7 +254,7 @@ $themes = array (
     'status' => 'pro',
     'name_clean' => 'luxury-car',
   ),
-  20 =>
+  23 =>
   array (
     'type' => 'CSMM PRO',
     'version' => '5.005',
@@ -231,7 +265,7 @@ $themes = array (
     'status' => 'pro',
     'name_clean' => 'maintenance-mode',
   ),
-  21 =>
+  24 =>
   array (
     'type' => 'CSMM PRO',
     'version' => '5.005',
@@ -242,18 +276,18 @@ $themes = array (
     'status' => 'agency',
     'name_clean' => 'makeup-artist-training',
   ),
-  22 =>
+  25 =>
   array (
     'type' => 'CSMM PRO',
-    'version' => '15.05',
-    'last_edit' => 'Fri, 02 Mar 2018 11:54:45 +0000',
+    'version' => '15.17',
+    'last_edit' => 'Wed, 25 Apr 2018 11:08:31 +0000',
     'name' => 'Mobile Designer',
     'description' => 'Andrea',
-    'frontpage' => '0',
+    'frontpage' => '1',
     'status' => 'agency',
     'name_clean' => 'mobile-designer',
   ),
-  23 =>
+  26 =>
   array (
     'type' => 'CSMM PRO',
     'version' => '5.005',
@@ -264,7 +298,7 @@ $themes = array (
     'status' => 'pro',
     'name_clean' => 'modern-blog',
   ),
-  24 =>
+  27 =>
   array (
     'type' => 'CSMM PRO',
     'version' => '15.05',
@@ -275,7 +309,7 @@ $themes = array (
     'status' => 'agency',
     'name_clean' => 'modern-office',
   ),
-  25 =>
+  28 =>
   array (
     'type' => 'CSMM PRO',
     'version' => '15.17',
@@ -286,7 +320,7 @@ $themes = array (
     'status' => 'pro',
     'name_clean' => 'mountain-slide',
   ),
-  26 =>
+  29 =>
   array (
     'type' => 'CSMM PRO',
     'version' => '5.05',
@@ -297,18 +331,18 @@ $themes = array (
     'status' => 'pro',
     'name_clean' => 'mountain',
   ),
-  27 =>
+  30 =>
   array (
     'type' => 'CSMM PRO',
-    'version' => '15.14',
-    'last_edit' => 'Sat, 24 Mar 2018 11:04:57 +0000',
+    'version' => '15.17',
+    'last_edit' => 'Wed, 25 Apr 2018 11:12:56 +0000',
     'name' => 'Movie Trailer (Video)',
     'description' => '',
-    'frontpage' => '1',
+    'frontpage' => '0',
     'status' => 'pro',
     'name_clean' => 'movie-trailer-video',
   ),
-  28 =>
+  31 =>
   array (
     'type' => 'CSMM PRO',
     'version' => '15.05',
@@ -319,7 +353,7 @@ $themes = array (
     'status' => 'agency',
     'name_clean' => 'nature',
   ),
-  29 =>
+  32 =>
   array (
     'type' => 'CSMM PRO',
     'version' => '5.14',
@@ -330,7 +364,7 @@ $themes = array (
     'status' => 'agency',
     'name_clean' => 'office-meeting-video',
   ),
-  30 =>
+  33 =>
   array (
     'type' => 'CSMM PRO',
     'version' => '15.05',
@@ -341,7 +375,7 @@ $themes = array (
     'status' => 'agency',
     'name_clean' => 'office-theme',
   ),
-  31 =>
+  34 =>
   array (
     'type' => 'CSMM PRO',
     'version' => '5.005',
@@ -352,29 +386,29 @@ $themes = array (
     'status' => 'agency',
     'name_clean' => 'online-learning',
   ),
-  32 =>
+  35 =>
   array (
     'type' => 'CSMM PRO',
-    'version' => '5.005',
-    'last_edit' => 'Mon, 26 Feb 2018 18:10:05 +0000',
+    'version' => '15.17',
+    'last_edit' => 'Wed, 25 Apr 2018 11:10:44 +0000',
     'name' => 'Pancake House',
-    'description' => 'Andrea',
+    'description' => '',
     'frontpage' => '0',
     'status' => 'pro',
     'name_clean' => 'pancake-house',
   ),
-  33 =>
+  36 =>
   array (
     'type' => 'CSMM PRO',
-    'version' => '5.05',
-    'last_edit' => 'Wed, 28 Feb 2018 10:03:34 +0000',
+    'version' => '15.17',
+    'last_edit' => 'Wed, 25 Apr 2018 11:15:19 +0000',
     'name' => 'Parenting',
-    'description' => 'Andrea',
+    'description' => '',
     'frontpage' => '0',
     'status' => 'pro',
     'name_clean' => 'parenting',
   ),
-  34 =>
+  37 =>
   array (
     'type' => 'CSMM PRO',
     'version' => '15.17',
@@ -385,7 +419,7 @@ $themes = array (
     'status' => 'agency',
     'name_clean' => 'photography',
   ),
-  35 =>
+  38 =>
   array (
     'type' => 'CSMM PRO',
     'version' => '15.17',
@@ -396,7 +430,7 @@ $themes = array (
     'status' => 'agency',
     'name_clean' => 'running-blog',
   ),
-  36 =>
+  39 =>
   array (
     'type' => 'CSMM PRO',
     'version' => '15.14',
@@ -407,7 +441,7 @@ $themes = array (
     'status' => 'pro',
     'name_clean' => 'running-video',
   ),
-  37 =>
+  40 =>
   array (
     'type' => 'CSMM PRO',
     'version' => '5.005',
@@ -418,29 +452,29 @@ $themes = array (
     'status' => 'agency',
     'name_clean' => 'shoes-store',
   ),
-  38 =>
+  41 =>
   array (
     'type' => 'CSMM PRO',
     'version' => '15.17',
-    'last_edit' => 'Fri, 30 Mar 2018 11:43:42 +0000',
+    'last_edit' => 'Wed, 25 Apr 2018 11:17:21 +0000',
     'name' => 'Simple Beige Design',
     'description' => '',
     'frontpage' => '0',
     'status' => 'pro',
     'name_clean' => 'simple-beige-design',
   ),
-  39 =>
+  42 =>
   array (
     'type' => 'CSMM PRO',
-    'version' => '5.14',
-    'last_edit' => 'Fri, 23 Mar 2018 16:49:18 +0000',
+    'version' => '15.17',
+    'last_edit' => 'Wed, 25 Apr 2018 11:19:34 +0000',
     'name' => 'Snow Screensaver (Video)',
     'description' => '',
     'frontpage' => '1',
     'status' => 'pro',
     'name_clean' => 'snow-screensaver-video',
   ),
-  40 =>
+  43 =>
   array (
     'type' => 'CSMM PRO',
     'version' => '15.17',
@@ -451,18 +485,18 @@ $themes = array (
     'status' => 'pro',
     'name_clean' => 'snowboarding-blog',
   ),
-  41 =>
+  44 =>
   array (
     'type' => 'CSMM PRO',
     'version' => '15.17',
-    'last_edit' => 'Fri, 30 Mar 2018 11:46:25 +0000',
+    'last_edit' => 'Wed, 25 Apr 2018 11:21:19 +0000',
     'name' => 'Snowy Mountain',
-    'description' => 'Andrea',
+    'description' => '',
     'frontpage' => '1',
     'status' => 'pro',
     'name_clean' => 'snowy-mountain',
   ),
-  42 =>
+  45 =>
   array (
     'type' => 'CSMM PRO',
     'version' => '15.17',
@@ -473,18 +507,18 @@ $themes = array (
     'status' => 'agency',
     'name_clean' => 'spring',
   ),
-  43 =>
+  46 =>
   array (
     'type' => 'CSMM PRO',
-    'version' => '5.005',
-    'last_edit' => 'Fri, 23 Feb 2018 12:43:09 +0000',
+    'version' => '15.17',
+    'last_edit' => 'Wed, 25 Apr 2018 11:22:49 +0000',
     'name' => 'The Big City Newsletter',
     'description' => 'Andrea',
     'frontpage' => '1',
     'status' => 'agency',
     'name_clean' => 'the-big-city-newsletter',
   ),
-  44 =>
+  47 =>
   array (
     'type' => 'CSMM PRO',
     'version' => '5.14',
@@ -495,7 +529,7 @@ $themes = array (
     'status' => 'pro',
     'name_clean' => 'the-sunny-view',
   ),
-  45 =>
+  48 =>
   array (
     'type' => 'CSMM PRO',
     'version' => '5.001',
@@ -506,7 +540,7 @@ $themes = array (
     'status' => 'pro',
     'name_clean' => 'travel-agency',
   ),
-  46 =>
+  49 =>
   array (
     'type' => 'CSMM PRO',
     'version' => '15.05',
@@ -517,18 +551,18 @@ $themes = array (
     'status' => 'agency',
     'name_clean' => 'travel-blog',
   ),
-  47 =>
+  50 =>
   array (
     'type' => 'CSMM PRO',
     'version' => '15.17',
-    'last_edit' => 'Fri, 30 Mar 2018 11:59:59 +0000',
+    'last_edit' => 'Wed, 25 Apr 2018 11:24:56 +0000',
     'name' => 'Tulips',
     'description' => '',
-    'frontpage' => '0',
+    'frontpage' => '1',
     'status' => 'agency',
     'name_clean' => 'tulips',
   ),
-  48 =>
+  51 =>
   array (
     'type' => 'CSMM PRO',
     'version' => '5.001',
@@ -539,7 +573,7 @@ $themes = array (
     'status' => 'pro',
     'name_clean' => 'video-production',
   ),
-  49 =>
+  52 =>
   array (
     'type' => 'CSMM PRO',
     'version' => '5.005',
@@ -550,7 +584,7 @@ $themes = array (
     'status' => 'agency',
     'name_clean' => 'webinar',
   ),
-  50 =>
+  53 =>
   array (
     'type' => 'CSMM PRO',
     'version' => '5.005',
@@ -561,7 +595,18 @@ $themes = array (
     'status' => 'agency',
     'name_clean' => 'wedding-blog',
   ),
-  51 =>
+  54 =>
+  array (
+    'type' => 'CSMM PRO',
+    'version' => '15.17',
+    'last_edit' => 'Tue, 22 May 2018 12:41:04 +0000',
+    'name' => 'White Orchids',
+    'description' => '',
+    'frontpage' => '1',
+    'status' => 'pro',
+    'name_clean' => 'white-orchids',
+  ),
+  55 =>
   array (
     'type' => 'CSMM PRO',
     'version' => '5.14',
@@ -572,7 +617,7 @@ $themes = array (
     'status' => 'agency',
     'name_clean' => 'working-out',
   ),
-  52 =>
+  56 =>
   array (
     'type' => 'CSMM PRO',
     'version' => '15.05',
@@ -583,11 +628,11 @@ $themes = array (
     'status' => 'agency',
     'name_clean' => 'workplace',
   ),
-  53 =>
+  57 =>
   array (
     'type' => 'CSMM PRO',
-    'version' => '15.14',
-    'last_edit' => 'Sat, 24 Mar 2018 10:27:27 +0000',
+    'version' => '15.17',
+    'last_edit' => 'Wed, 25 Apr 2018 11:00:38 +0000',
     'name' => 'Writing Service (Video)',
     'description' => '',
     'frontpage' => '1',

@@ -79,6 +79,9 @@
 							if ( '' === $signals_email ) {
 								$code 		= 'danger';
 								$response 	= $options['message_noemail'];
+              } elseif (!empty($options['gdpr_text']) && empty($_POST['gdpr_consent'])) {
+                $code     = 'danger';
+                $response   = 'Please confirm the subscription terms with the checkbox below.';
 							} else {
 								$signals_email = filter_var( strtolower( trim( $signals_email ) ), FILTER_SANITIZE_EMAIL );
 
@@ -120,8 +123,11 @@
 						}
 
 						$signals_arrange['form'] .= '<form role="form" method="post">
-							<input type="text" name="signals_email" placeholder="' . esc_attr( $options['input_text'] ) . '">
-							<input type="submit" name="submit" value="' . esc_attr( $options['button_text'] ) . '">
+							<input value="' . strip_tags( @$_POST['signals_email'] ) . '" type="text" name="signals_email" placeholder="' . esc_attr( $options['input_text'] ) . '">';
+            if ($options['gdpr_text']) {
+              $signals_arrange['form'] .= '<div class="gdpr_consent"><input type="checkbox" value="1" name="gdpr_consent" id="gdpr_consent"> <label for="gdpr_consent">' . $options['gdpr_text'] . '</label></div>';
+            }
+						$signals_arrange['form'] .= '<input type="submit" name="submit" value="' . esc_attr( $options['button_text'] ) . '">
 						</form>';
 
 						// antispam text

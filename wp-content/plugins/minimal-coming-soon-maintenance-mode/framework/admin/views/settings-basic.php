@@ -40,26 +40,10 @@
         </div>
 
         <div class="signals-form-group">
-          <label for="signals_csmm_excludese" class="signals-strong"><?php _e( 'Exclude Search Engines?', 'signals' ); ?></label>
-          <input type="checkbox" class="signals-form-ios" name="signals_csmm_excludese" id="signals_csmm_excludese" value="1"<?php checked( '1', $signals_csmm_options['exclude_se'] ); ?>>
+          <label for="signals_ip_whitelist" class="signals-strong pro-option">IP Whitelisting <sup>PRO</sup></label>
 
-          <p class="signals-form-help-block"><?php _e( 'Do you want to exclude search engines from viewing maintenance page? This will enable search engines to view your regular website and not the Maintenance Mode page even if the plugin is enabled.', 'signals' ); ?></p>
-        </div>
-      </div>
-
-      <div class="signals-double-group signals-clearfix">
-        <div class="signals-form-group">
-          <label for="signals_csmm_title" class="signals-strong"><?php _e( 'Page Title', 'signals' ); ?></label>
-          <input type="text" name="signals_csmm_title" id="signals_csmm_title" value="<?php echo esc_attr_e( stripslashes( $signals_csmm_options['title'] ) ); ?>" placeholder="<?php esc_attr_e( 'Please provide the Page Title', 'signals' ); ?>" class="signals-form-control">
-
-          <p class="signals-form-help-block"><?php _e( 'Provide title for the maintenance page, for SEO.', 'signals' ); ?></p>
-        </div>
-
-        <div class="signals-form-group">
-          <label for="signals_csmm_description" class="signals-strong"><?php _e( 'Page Description', 'signals' ); ?></label>
-          <input type="text" name="signals_csmm_description" id="signals_csmm_description" value="<?php echo esc_attr_e( stripslashes( $signals_csmm_options['description'] ) ); ?>" placeholder="<?php esc_attr_e( 'Please provide the Page Description', 'signals' ); ?>" class="signals-form-control">
-
-          <p class="signals-form-help-block"><?php _e( 'Provide description for the maintenance page, for SEO', 'signals' ); ?></p>
+          <textarea rows="2" class="skip-save pro-option" disabled="disabled" name="signals_ip_whitelist" id="signals_ip_whitelist" ><?php echo esc_attr_e( $signals_csmm_options['signals_ip_whitelist'] ); ?></textarea>
+          <p class="signals-form-help-block">Listed IPs will not be affected by the coming soon mode and their users will see the "normal" site. Write one IP per line. If the user's IP changes he will no longer be whitelisted. Your IP address is: <?php echo $_SERVER['REMOTE_ADDR']; ?> This is a <a href="#pro" class="csmm-change-tab">PRO feature</a>.</p>
         </div>
       </div>
 
@@ -144,14 +128,7 @@
         <input type="hidden" name="signals_csmm_arrange" id="signals_csmm_arrange" value="<?php echo esc_attr_e( $signals_csmm_options['arrange'] ); ?>">
 
 </div>
-      <div class="signals-double-group signals-clearfix">
-			<div class="signals-form-group">
-				<label for="signals_csmm_analytics" class="signals-strong"><?php _e( 'Analytics Code', 'signals' ); ?></label>
-				<input name="signals_csmm_analytics" id="signals_csmm_analytics" placeholder="UA-123456-12" value="<?php echo csmm_convert_ga( stripslashes($signals_csmm_options['analytics'])); ?>">
 
-				<p class="signals-form-help-block"><?php _e( 'Enter only the Google Analytics Profile ID, ie: UA-123456-99. You\'ll find it in the GA tracking code.', 'signals' ); ?></p>
-      </div>
-			</div>
 		</div>
 	</div>
 </div><!-- #basic -->

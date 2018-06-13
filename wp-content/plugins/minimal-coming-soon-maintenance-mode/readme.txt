@@ -1,44 +1,44 @@
 === Minimal Coming Soon & Maintenance Mode ===
 Contributors: WebFactory
-Tags: coming soon, coming soon page, launch page, maintenance mode, mailchimp, coming soon mode, under construction, maintenance mode page, landing page, offline page, subscribe form, maintenance
+Tags: coming soon, coming soon page, launch page, maintenance mode, maintenance mode page, coming soon mode, under construction, maintenance mode page, landing page, offline page, subscribe form, maintenance, mailchimp, gdpr
 Requires at least: 4.0
 Requires PHP: 5.2
 Tested up to: 4.9
-Stable tag: 1.65
+Stable tag: 1.70
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Simple & flexible Coming Soon, Maintenance Mode & Landing Pages - sets up in under a minute. MailChimp support built-in.
+Simple & flexible Coming Soon, Maintenance Mode & Landing Page - sets up in under a minute. GDPR compliant MailChimp support built-in.
 
 
 == Description ==
 The <a href="https://comingsoonwp.com/?utm_source=wordpressorg&utm_medium=content&utm_campaign=readme&utm_content=top">Minimal Coming Soon & Maintenance Mode</a> plugin allows you to **quickly & easily** set up a Coming Soon, Maintenance Mode, Landing Page or Launch Page for your website.
 
-It's simple + flexible and works with any WordPress theme & plugin, plus you'll have full control over the frontend of the website and can modify almost every aspect of it per your preference. Easily connects with MailChimp API so that you can **collect emails** from visitors.
+It's simple + flexible and works with any WordPress theme & plugin, plus you'll have full control over the frontend of the website and can modify almost every aspect of it per your preference. Easily connects with MailChimp API so that you can **collect emails** from visitors and it's fully GDPR compliant.
 
 
 = Plugin Features =
 
-* check out <a href="https://comingsoonwp.com/themes/?utm_source=wordpressorg&utm_medium=content&utm_campaign=readme&utm_content=themes">40+ themes</a> that come with the PRO version as well as <a href="https://comingsoonwp.com/image-filters/?utm_source=wordpressorg&utm_medium=content&utm_campaign=readme&utm_content=instagram-filters">26+ Instagram filters</a>
+* Check out <a href="https://comingsoonwp.com/themes/?utm_source=wordpressorg&utm_medium=content&utm_campaign=readme&utm_content=themes">50+ themes</a> that come with the PRO version, <a href="https://comingsoonwp.com/image-filters/?utm_source=wordpressorg&utm_medium=content&utm_campaign=readme&utm_content=instagram-filters">26+ Instagram filters</a> and <a href="https://comingsoonwp.com/content-animations/?utm_source=wordpressorg&utm_medium=content&utm_campaign=readme&utm_content=content-animations">47+ spectacular content animations</a>
 * Works with all WordPress themes and plugins
 * Completely customizable look and feel including background color, cover image, fonts, logo etc
-* includes <a href="https://comingsoonwp.com/?utm_source=wordpressorg&utm_medium=content&utm_campaign=readme&utm_content=400_images">400,000 premium images</a> in PRO version
+* Includes <a href="https://comingsoonwp.com/?utm_source=wordpressorg&utm_medium=content&utm_campaign=readme&utm_content=400_images">400,000 premium images</a> in PRO version
 * Each and every element of the maintenance page can be configured
 * Option to preview the coming soon or maintenance page before activation
-* <a href="https://comingsoonwp.com/?utm_source=wordpressorg&utm_medium=content&utm_campaign=readme&utm_content=seo">SEO preview and analysis tools</a> are available in the PRO version
+* <a href="https://comingsoonwp.com/?utm_source=wordpressorg&utm_medium=content&utm_campaign=readme&utm_content=seo">SEO preview and analysis tools</a> are available in the PRO version to make sure your site ranks as #1 from day zero
 * Rearrange position of the page elements to your liking - simple drag&drop
-* W3 Total Cache and WP Super Cache Support
+* W3 Total Cache, WP Super Cache, Endurance Page Cache, SiteGround SuperCacher, WP Fastest Cache and Swift Performance Cache support
 * Easily add Custom CSS and HTML
-* Collect Emails with MailChimp - full API support built-in
-* You can let search engines to view website normally while visitors see the Coming Soon page
-* Visible to only non logged in users so you can build your site while visitors see the Coming Soon page
+* Collect Emails with MailChimp - full GDPR compliant API support built-in for free
+* Plugin is GDPR compatible as it sets no cookies and displays an optional warning below the email field which users have to accept if they want to subscribe to the newsletter
+* You can let search engines view the normal website while visitors see the Coming Soon page
+* Visible to only non-logged-in users so you can build your site while visitors see the Coming Soon page
 * Supports Custom Login URL - works with all custom login plugins
 * Track visitors with support for Google Analytics
 * Over 800 Google Fonts available to fit any design
 * Stretch Background Image to Cover the Entire Browser
 * Uses HTML5 & CSS3
-* Powerful Options Panel
-* Get support from within the options panel - send a message directly to support agents, get a response ASAP
+* Get support from within the plugin's options panel - send a message directly to support agents, get a response ASAP
 
 = PRO Version Overview =
 
@@ -73,13 +73,20 @@ Yes and no. When activated it enables itself across the entire WP-MU network.
 
 1. Fast & intuitive interface lets you create coming soon pages in minutes
 2. Simple maintenance page
-3. Coming soon page
+3. Minimal Coming soon page
 4. Fully responsive design
-5. Mobile optimized admin panel
-6. Get support from within the plugin
+5. Get support from within the plugin
 
 
 == Changelog ==
+
+= 1.70 =
+* 2018-06-11
+* new: SEO tab
+* new: toogle MM admin bar menu
+* new: GDPR compatibility
+* fix: various smaller fixes
+* 253,000 downloads
 
 = 1.65 =
 * 2018-04-12

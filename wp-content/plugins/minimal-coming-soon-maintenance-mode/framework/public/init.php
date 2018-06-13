@@ -99,7 +99,6 @@ function csmm_plugin_init() {
 			}
 		}
 	}
-
 }
 add_action( 'init', 'csmm_plugin_init' );
 

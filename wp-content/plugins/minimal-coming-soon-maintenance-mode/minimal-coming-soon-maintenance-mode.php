@@ -3,7 +3,7 @@
  * Plugin Name: Minimal Coming Soon & Maintenance Mode
  * Plugin URI: https://wordpress.org/plugins/minimal-coming-soon-maintenance-mode/
  * Description: Simply awesome coming soon & maintenance mode plugin. Super-simple to use. MailChimp support built-in.
- * Version: 1.65
+ * Version: 1.70
  * Author: WebFactory
  * Author URI: https://www.webfactoryltd.com
  * License: GPLv3
@@ -46,7 +46,7 @@ define('CSMM_POINTERS', 'csmm_pointers');
 function csmm_default_options() {
   $default_options = array(
     'status'        => '2',
-    'title'         => 'Site is under maintenance',
+    'title'         => get_bloginfo('name') . ' is coming soon',
     'description'   => 'We are doing some maintenance on our site. Please come back later.',
     'love'          => '0',
     'header_text'       => 'Our site is coming soon',
@@ -54,9 +54,10 @@ function csmm_default_options() {
     'antispam_text'     => 'And yes, we hate spam too!',
     'custom_login_url'     => '/login/',
     'show_logged_in'     => '1',
-    'exclude_se'      => '1',
+    'exclude_se'      => '0',
     'arrange'         => 'logo,header,secondary,form,html',
     'analytics'       => '',
+    'disable_adminbar' => '0',
 
     'mailchimp_api'      => '',
     'mailchimp_list'     => '',
@@ -84,6 +85,7 @@ function csmm_default_options() {
 
     'input_text'       => 'Enter your best email address',
     'button_text'       => 'Subscribe',
+    'gdpr_text'         => 'I understand the site\'s privacy policy and am willingly sharing my email address',
     'ignore_form_styles'   => 1,
     'input_font_size'    => '13',
     'button_font_size'    => '12',
@@ -105,7 +107,12 @@ function csmm_default_options() {
 
     'disable_settings'     => '2',
     'custom_html'      => '',
-    'custom_css'      => ''
+    'custom_css'      => '',
+
+    'block_se' => '',
+    'tracking_pixel' => '',
+    'social_preview' => '',
+    'signals_ip_whitelist' => ''
   );
 
   return $default_options;

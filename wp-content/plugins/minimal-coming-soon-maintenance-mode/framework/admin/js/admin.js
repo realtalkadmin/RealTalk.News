@@ -237,6 +237,42 @@ function getUploader( $text, $target ) {
     $(this).find('td').eq(1).html('<span class="dashicons dashicons-yes"></span> ' + $(this).find('td').eq(1).html());
   });
 
+
+  $('#signals_csmm_title, #signals_csmm_description').on('change keyup', function() {
+    var title_lenght = $('#signals_csmm_title').val().length;
+    var title_bar_width = Math.round(title_lenght/60*100);
+    if(title_bar_width>100) title_bar_width = 100;
+    $('#mm-seo-progress-title .mm-seo-progress-bar').css('width',title_bar_width+'%');
+
+    if(title_bar_width == 100){
+      $('#mm-seo-progress-title').removeClass('mm-seo-progress-good');
+      $('#mm-seo-progress-title').addClass('mm-seo-progress-warning');
+    } else if(title_bar_width<80){
+      $('#mm-seo-progress-title').removeClass('mm-seo-progress-good');
+      $('#mm-seo-progress-title').addClass('mm-seo-progress-warning');
+    } else {
+      $('#mm-seo-progress-title').removeClass('mm-seo-progress-warning');
+      $('#mm-seo-progress-title').addClass('mm-seo-progress-good');
+    }
+
+    var description_lenght = $('#signals_csmm_description').val().length;
+    var description_bar_width = Math.round(description_lenght/300*100);
+    if(description_bar_width>100) description_bar_width = 100;
+    $('#mm-seo-progress-description .mm-seo-progress-bar').css('width',description_bar_width+'%');
+
+    if(description_bar_width == 100) {
+      $('#mm-seo-progress-description').removeClass('mm-seo-progress-good');
+      $('#mm-seo-progress-description').addClass('mm-seo-progress-warning');
+    } else if(description_bar_width < 36) {
+      $('#mm-seo-progress-description').removeClass('mm-seo-progress-good');
+      $('#mm-seo-progress-description').addClass('mm-seo-progress-warning');
+    } else {
+      $('#mm-seo-progress-description').removeClass('mm-seo-progress-warning');
+      $('#mm-seo-progress-description').addClass('mm-seo-progress-good');
+    }
+  }).trigger('change');
+
+
     // reposition main on/off button on window resize and load
   $(window).on('resize', function(e) {
     if ($('.signals-float-right').width() >= 1200) {

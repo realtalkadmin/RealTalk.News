@@ -48,11 +48,11 @@ function csmm_render_template( $options ) {
 function csmm_linkback() {
   $options = csmm_get_options();
   $out = '';
-  
+
   if (empty($options['love'])) {
     return $out;
   }
-  
+
   $out .= '<div id="linkback"><p>';
   $tmp = md5(get_site_url());
   if ($tmp[0] < '4') {
@@ -65,7 +65,7 @@ function csmm_linkback() {
     $out .= 'Create free <a href="https://wordpress.org/plugins/minimal-coming-soon-maintenance-mode/" target="_blank">maintenance mode pages for WordPress</a>.';
   }
   $out .='</p></div>';
-      
+
   return $out;
 } // csmm_linkback
 
@@ -86,7 +86,7 @@ function csmm_check_referrer() {
 		'Bing'            	=> 	'bingbot',
 		'BingPreview'     	=> 	'BingPreview',
 		'CrocCrawler'     	=> 	'CrocCrawler',
-		'Dumbot' 			=> 	'Dumbot',
+		'Dumbot' 			    => 	'Dumbot',
 		'eStyle Bot'     	=> 	'eStyle',
 		'FAST-WebCrawler'	=> 	'FAST-WebCrawler',
 		'GeonaBot'       	=> 	'GeonaBot',
@@ -98,7 +98,7 @@ function csmm_check_referrer() {
 		'MSRBOT'         	=> 	'MSRBOT',
 		'Rambler'        	=> 	'Rambler',
 		'Scrubby robot'  	=> 	'Scrubby',
-		'Yahoo'           	=> 	'Yahoo'
+		'Yahoo'          	=> 	'Yahoo'
 	);
 
 

@@ -154,6 +154,7 @@
 .signals-main-menu {
   display: block;
   margin: 0;
+  border-right: 1px solid #f1f1f1;
 }
 .signals-main-menu li {
   font-size: 14px;
@@ -1011,8 +1012,12 @@ option[value="-1"] {
   padding: 15px;
   margin: 0px 0 20px 0;
   color: #fff;
-  background-color: rgba(243, 89, 88, 0.81);
+  background-color: rgba(236, 65, 77, 1);
   position: relative;
+}
+
+#upsell-notice .button-flat:active, #upsell-notice .button-flat:hover {
+  color: black;
 }
 
 #upsell-notice b {
@@ -1072,7 +1077,7 @@ input.color, input.jscolor {
   width: 100px;
 }
 
-.signals-admin-form .button-flat {
+.signals-admin-form .button.button-flat {
   box-shadow: none;
   vertical-align: baseline;
   font-weight: bold;
@@ -1081,10 +1086,37 @@ input.color, input.jscolor {
   color: rgba(243, 89, 88, 0.81);
 }
 
-.signals-admin-form .button-flat:hover {
+.signals-admin-form .button.button-flat:hover {
   background-color: transparent;
   border: thin solid #fff;
   color: #fff;
+}
+
+.mm-seo-progress{
+  display: block;
+  box-sizing: border-box;
+  width: 99%;
+  height: 8px;
+  margin-top: 5px;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 1px solid #DDD;
+}
+
+
+.mm-seo-progress-warning .mm-seo-progress-bar{
+  background: #ffb200;
+  width:40px;
+  max-width: 100%;
+  height: 100%;
+}
+.mm-seo-progress-good .mm-seo-progress-bar{
+  background: #64bd63;
+  width:40px;
+  max-width: 100%;
+  height: 100%;
 }
 
 #mm_rate_cancel {
@@ -1104,14 +1136,22 @@ input.color, input.jscolor {
 
 .signals-strong sup {
   padding: 0 0 0 5px;
-  margin: 0;
   color: #fe2929;
+  margin: -5px 0 0 0;
+  display: inline-block;
 }
 
 #features-table {
   width: 100%;
   border-spacing: 20px;
   margin-bottom: -20px;
+}
+
+.below-pricing {
+  text-align: center;
+  margin: 20px 20px;
+  background-color: #f1f1f1;
+  padding: 15px 10px;
 }
 
 /* pricing */
@@ -1203,6 +1243,23 @@ hr {
   margin: 30px 0;
   background-color: #EC414D;
   height: 3px;
+}
+
+.footer-buttons-left {
+    margin: 0;
+    padding: 0 20px 0 10px;
+    display: inline-block;
+}
+
+.footer-buttons-right {
+    margin: 0;
+    padding: 5px 10px 0 10px;
+    display: inline-block;
+    right: 10px;
+    left: auto;
+    position: fixed;
+    color: #666;
+    font-style: italic;
 }
 
 /* background image filters */

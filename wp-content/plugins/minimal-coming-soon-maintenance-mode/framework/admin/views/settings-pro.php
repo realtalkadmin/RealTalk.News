@@ -5,8 +5,6 @@
 
 		<div class="signals-section-content">
 
-    <p style="text-align: center;"><b>Find out more about the PRO features on the plugin's site - <a href="<?php echo csmm_generate_web_link('find-out-more'); ?>" target="_blank">comingsoonwp.com</a></b></p>
-
 <table id="features-table">
    <tr>
       <td>
@@ -43,6 +41,8 @@
       </td>
    </tr>
 </table>
+
+<p class="below-pricing">Find out more about the <b>PRO features</b> on the plugin's site - <a href="<?php echo csmm_generate_web_link('find-out-more'); ?>" target="_blank">comingsoonwp.com</a></p>
 
 <hr id="pricing-table-above">
 
@@ -109,7 +109,7 @@
 <?php
   $meta = csmm_get_meta();
   $promo_delta = HOUR_IN_SECONDS;
-  $promo_delta2 = DAY_IN_SECONDS * 60;
+  $promo_delta2 = DAY_IN_SECONDS * 35;
 if ((time() - $meta['first_install_gmt']) < $promo_delta) {
 ?>
       <td>

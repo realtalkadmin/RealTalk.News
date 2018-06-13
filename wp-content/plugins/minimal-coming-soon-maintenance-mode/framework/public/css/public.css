@@ -97,6 +97,16 @@ input[type="submit"]:focus {
 	border-color: #0a0a0a;
 }
 
+.gdpr_consent {
+  margin: 15px 0 0 0;
+}
+.gdpr_consent input {
+  vertical-align: middle;
+}
+.gdpr_consent label:hover {
+  cursor: pointer;
+}
+
 
 /**
  * 5 - Plugin (Default)

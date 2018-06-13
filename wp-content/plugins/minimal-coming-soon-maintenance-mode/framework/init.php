@@ -13,8 +13,14 @@ class CSMM {
   }
 
   static function admin_bar_style() {
+    $options = csmm_get_options();
+
+    if (isset($_POST['signals_csmm_submit'])) {
+      $options['disable_adminbar'] = isset($_POST['signals_csmm_disable_adminbar']);
+    }
+
     // admin bar has to be anabled, user an admin and custom filter true
-    if (false === is_admin_bar_showing() || false === current_user_can('administrator') || false === apply_filters('csmm_show_admin_bar', true)) {
+    if ($options['disable_adminbar'] || false === is_admin_bar_showing() || false === current_user_can('administrator') || false === apply_filters('csmm_show_admin_bar', true)) {
       return;
     }
 
@@ -28,9 +34,14 @@ class CSMM {
   // add admin bar menu and status
   static function admin_bar() {
     global $wp_admin_bar;
+    $options = csmm_get_options();
+
+    if (isset($_POST['signals_csmm_submit'])) {
+      $options['disable_adminbar'] = isset($_POST['signals_csmm_disable_adminbar']);
+    }
 
     // only show to admins
-    if (false === current_user_can('administrator') || false === apply_filters('csmm_show_admin_bar', true)) {
+    if ($options['disable_adminbar'] || false === current_user_can('administrator') || false === apply_filters('csmm_show_admin_bar', true)) {
       return;
     }
 

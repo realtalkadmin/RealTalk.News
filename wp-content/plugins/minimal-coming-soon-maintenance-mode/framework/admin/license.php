@@ -147,6 +147,7 @@ class csmm_license {
     } else {
       $out['success'] = true;
       $out = array_merge($out, $result['data']);
+      set_site_transient('update_plugins', null);
     }
 
     return $out;

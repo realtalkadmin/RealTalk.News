@@ -12,7 +12,7 @@
 <div class="signals-tile" id="form">
 	<div class="signals-tile-body">
 		<div class="signals-tile-title"><?php _e( 'FORM', 'signals' ); ?></div>
-		<p><?php _e( 'Form design settings for the plugin. These settings affect the appearance of the MailChimp subscription form. You can customize styles for the input field and button.<br>In order for the form to show up on the site, please configure MailChimp under the "Email" tab settings.', 'signals' ); ?></p>
+		<p><?php _e( 'Leads are the lifeline of any business. Make sure your form looks trustworthy. Configure technical details on the <a href="">email tab</a>.', 'signals' ); ?></p>
 
 		<div class="signals-section-content">
 			<div class="signals-double-group signals-clearfix">
@@ -30,6 +30,16 @@
 					<p class="signals-form-help-block"><?php _e( 'Enter the text for the button. Usually, it will be "Subscribe" or something like that.', 'signals' ); ?></p>
 				</div>
 			</div>
+
+      <div class="signals-double-group signals-clearfix">
+        <div class="signals-form-group">
+          <label for="signals_csmm_gdpr_text" class="signals-strong"><?php _e( 'GDPR Consent Checkbox Text', 'signals' ); ?></label>
+          <textarea name="signals_csmm_gdpr_text" id="signals_csmm_gdpr_text" placeholder="<?php _e( '', 'signals' ); ?>" class="signals-form-control" rows="3"><?php echo esc_textarea( stripslashes( $signals_csmm_options['gdpr_text'] ) ); ?></textarea>
+
+          <p class="signals-form-help-block"><?php _e( 'Checkbox and the text above are displayed below the form email field. User has to check the checkbox in order to subscribe. Leave the field empty if you don\'t want to display the checkbox.', 'signals' ); ?></p>
+        </div>
+
+      </div>
 
       <div class="signals-double-group signals-clearfix">
 			<div class="signals-form-group">
