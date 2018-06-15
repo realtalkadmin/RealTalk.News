@@ -1,0 +1,150 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# pthread_getattr_np
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   In 32 bit mode, the process size limit was hit
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Use 64 bit Java on a 64 bit OS
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (os_linux_x86.cpp:718), pid=6985, tid=140498160248576
+#
+# JRE version:  (7.0_151-b01) (build )
+# Java VM: OpenJDK 64-Bit Server VM (24.151-b01 mixed mode linux-amd64 compressed oops)
+# Derivative: IcedTea 2.6.11
+# Distribution: Ubuntu 14.04 LTS, package 7u151-2.6.11-0ubuntu1.14.04.1
+# Failed to write core dump. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00007fc85c1cb800):  JavaThread "Reference Handler" daemon [_thread_new, id=6996, stack(0x0000000000000000,0x0000000000000000)]
+
+Stack: [0x0000000000000000,0x0000000000000000],  sp=0x00007fc846eedae0,  free space=137205234614k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [libjvm.so+0x962b45]
+V  [libjvm.so+0x49a474]
+V  [libjvm.so+0x7e21ea]
+V  [libjvm.so+0x7e223d]
+V  [libjvm.so+0x90f619]
+V  [libjvm.so+0x91568c]
+V  [libjvm.so+0x7d75c2]
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+=>0x00007fc85c1cb800 JavaThread "Reference Handler" daemon [_thread_new, id=6996, stack(0x0000000000000000,0x0000000000000000)]
+  0x00007fc85c00a000 JavaThread "main" [_thread_in_Java, id=6986, stack(0x00007fc8624a2000,0x00007fc8625a3000)]
+
+Other Threads:
+  0x00007fc85c1c5800 VMThread [stack: 0x00007fc846eef000,0x00007fc846ff0000] [id=6995]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap
+ PSYoungGen      total 150528K, used 2590K [0x00000000eb280000, 0x00000000f5a00000, 0x0000000100000000)
+  eden space 129536K, 2% used [0x00000000eb280000,0x00000000eb507b38,0x00000000f3100000)
+  from space 20992K, 0% used [0x00000000f4580000,0x00000000f4580000,0x00000000f5a00000)
+  to   space 20992K, 0% used [0x00000000f3100000,0x00000000f3100000,0x00000000f4580000)
+ ParOldGen       total 343040K, used 0K [0x00000000c1800000, 0x00000000d6700000, 0x00000000eb280000)
+  object space 343040K, 0% used [0x00000000c1800000,0x00000000c1800000,0x00000000d6700000)
+ PSPermGen       total 21504K, used 936K [0x00000000b7200000, 0x00000000b8700000, 0x00000000c1800000)
+  object space 21504K, 4% used [0x00000000b7200000,0x00000000b72ea0f0,0x00000000b8700000)
+
+Card table byte_map: [0x00007fc857d2d000,0x00007fc857f75000] byte_map_base: 0x00007fc857774000
+
+Polling page: 0x00007fc8625b8000
+
+Code Cache  [0x00007fc857f75000, 0x00007fc8581e5000, 0x00007fc85af75000)
+ total_blobs=63 nmethods=0 adapters=41 free_code_cache=48824Kb largest_free_block=49995840
+
+Compilation events (0 events):
+No events
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (10 events):
+Event: 0.031 loading class 0x00007fc860097900 done
+Event: 0.031 loading class 0x00007fc8600a71d0
+Event: 0.031 loading class 0x00007fc8600a71d0 done
+Event: 0.031 loading class 0x00007fc8600a3370
+Event: 0.031 loading class 0x00007fc8600a3370 done
+Event: 0.031 loading class 0x00007fc8600abec0
+Event: 0.032 loading class 0x00007fc8600abec0 done
+Event: 0.032 loading class 0x00007fc8600abef0
+Event: 0.032 loading class 0x00007fc8600abef0 done
+Event: 0.032 Thread 0x00007fc85c1cb800 Thread added: 0x00007fc85c1cb800
+
+
+Dynamic libraries:
+00400000-00401000 r-xp 00000000 08:01 1050720                            /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java
+00600000-00601000 r--p 00000000 08:01 1050720                            /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java
+00601000-00602000 rw-p 00001000 08:01 1050720                            /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java
+01366000-01387000 rw-p 00000000 00:00 0                                  [heap]
+b7200000-b8700000 rw-p 00000000 00:00 0 
+b8700000-c1800000 rw-p 00000000 00:00 0 
+c1800000-d6700000 rw-p 00000000 00:00 0 
+d6700000-eb280000 rw-p 00000000 00:00 0 
+eb280000-f5a00000 rw-p 00000000 00:00 0 
+f5a00000-100000000 rw-p 00000000 00:00 0 
+7fc828000000-7fc828021000 rw-p 00000000 00:00 0 
+7fc828021000-7fc82c000000 ---p 00000000 00:00 0 
+7fc82c000000-7fc82c021000 rw-p 00000000 00:00 0 
+7fc82c021000-7fc830000000 ---p 00000000 00:00 0 
+7fc830000000-7fc830021000 rw-p 00000000 00:00 0 
+7fc830021000-7fc834000000 ---p 00000000 00:00 0 
+7fc838000000-7fc838021000 rw-p 00000000 00:00 0 
+7fc838021000-7fc83c000000 ---p 00000000 00:00 0 
+7fc83c000000-7fc83c021000 rw-p 00000000 00:00 0 
+7fc83c021000-7fc840000000 ---p 00000000 00:00 0 
+7fc840000000-7fc840021000 rw-p 00000000 00:00 0 
+7fc840021000-7fc844000000 ---p 00000000 00:00 0 
+7fc846ced000-7fc846eef000 rw-p 00000000 00:00 0 
+7fc846eef000-7fc846ef0000 ---p 00000000 00:00 0 
+7fc846ef0000-7fc848000000 rw-p 00000000 00:00 0 
+7fc848000000-7fc848021000 rw-p 00000000 00:00 0 
+7fc848021000-7fc84c000000 ---p 00000000 00:00 0 
+7fc84c000000-7fc84c021000 rw-p 00000000 00:00 0 
+7fc84c021000-7fc850000000 ---p 00000000 00:00 0 
+7fc850000000-7fc850021000 rw-p 00000000 00:00 0 
+7fc850021000-7fc854000000 ---p 00000000 00:00 0 
+7fc854015000-7fc854b6a000 rw-p 00000000 00:00 0 
+7fc854b6a000-7fc854d20000 r--s 01d63000 08:01 1183675                    /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rt.jar
+7fc854d20000-7fc8573d7000 rw-p 00000000 00:00 0 
+7fc8573d7000-7fc8573d8000 ---p 00000000 00:00 0 
+7fc8573d8000-7fc8574d8000 rw-p 00000000 00:00 0 
+7fc8574d8000-7fc8574d9000 ---p 00000000 00:00 0 
+7fc8574d9000-7fc8575d9000 rw-p 00000000 00:00 0 
+7fc8575d9000-7fc8575da000 ---p 00000000 00:00 0 
+7fc8575da000-7fc8576da000 rw-p 00000000 00:00 0 
+7fc8576da000-7fc8576db000 ---p 00000000 00:00 0 
+7fc8576db000-7fc8577db000 rw-p 00000000 00:00 0 
+7fc8577db000-7fc8577dc000 ---p 00000000 00:00 0 
+7fc8577dc000-7fc8578dc000 rw-p 00000000 00:00 0 
+7fc8578dc000-7fc8578dd000 ---p 00000000 00:00 0 
+7fc8578dd000-7fc8579dd000 rw-p 00000000 00:00 0 
+7fc8579dd000-7fc8579de000 ---p 00000000 00:00 0 
+7fc8579de000-7fc857ade000 rw-p 00000000 00:00 0 
+7fc857ade000-7fc857adf000 ---p 00000000 00:00 0 
+7fc857adf000-7fc857c87000 rw-p 00000000 00:00 0 
+7fc857c87000-7fc857d2d000 rw-p 00000000 00:00 0 
+7fc857d2d000-7fc857d38000 rw-p 00000000 00:00 0 
+7fc857d38000-7fc857d80000 rw-p

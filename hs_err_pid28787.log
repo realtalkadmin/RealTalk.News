@@ -1,0 +1,160 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# pthread_getattr_np
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   In 32 bit mode, the process size limit was hit
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Use 64 bit Java on a 64 bit OS
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (os_linux_x86.cpp:718), pid=28787, tid=140257112577792
+#
+# JRE version:  (7.0_151-b01) (build )
+# Java VM: OpenJDK 64-Bit Server VM (24.151-b01 mixed mode linux-amd64 compressed oops)
+# Derivative: IcedTea 2.6.11
+# Distribution: Ubuntu 14.04 LTS, package 7u151-2.6.11-0ubuntu1.14.04.1
+# Failed to write core dump. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00007f903c1cb800):  JavaThread "Reference Handler" daemon [_thread_new, id=28799, stack(0x0000000000000000,0x0000000000000000)]
+
+Stack: [0x0000000000000000,0x0000000000000000],  sp=0x00007f90275f4ae0,  free space=136969836498k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [libjvm.so+0x962b45]
+V  [libjvm.so+0x49a474]
+V  [libjvm.so+0x7e21ea]
+V  [libjvm.so+0x7e223d]
+V  [libjvm.so+0x90f619]
+V  [libjvm.so+0x91568c]
+V  [libjvm.so+0x7d75c2]
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+=>0x00007f903c1cb800 JavaThread "Reference Handler" daemon [_thread_new, id=28799, stack(0x0000000000000000,0x0000000000000000)]
+  0x00007f903c00a000 JavaThread "main" [_thread_in_vm, id=28788, stack(0x00007f9042bc6000,0x00007f9042cc7000)]
+
+Other Threads:
+  0x00007f903c1c5800 VMThread [stack: 0x00007f90275f6000,0x00007f90276f7000] [id=28798]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap
+ PSYoungGen      total 150528K, used 2590K [0x00000000eb280000, 0x00000000f5a00000, 0x0000000100000000)
+  eden space 129536K, 2% used [0x00000000eb280000,0x00000000eb507b38,0x00000000f3100000)
+  from space 20992K, 0% used [0x00000000f4580000,0x00000000f4580000,0x00000000f5a00000)
+  to   space 20992K, 0% used [0x00000000f3100000,0x00000000f3100000,0x00000000f4580000)
+ ParOldGen       total 343040K, used 0K [0x00000000c1800000, 0x00000000d6700000, 0x00000000eb280000)
+  object space 343040K, 0% used [0x00000000c1800000,0x00000000c1800000,0x00000000d6700000)
+ PSPermGen       total 21504K, used 936K [0x00000000b7200000, 0x00000000b8700000, 0x00000000c1800000)
+  object space 21504K, 4% used [0x00000000b7200000,0x00000000b72ea4e0,0x00000000b8700000)
+
+Card table byte_map: [0x00007f903857e000,0x00007f90387c6000] byte_map_base: 0x00007f9037fc5000
+
+Polling page: 0x00007f9042cdc000
+
+Code Cache  [0x00007f90387c6000, 0x00007f9038a36000, 0x00007f903b7c6000)
+ total_blobs=63 nmethods=0 adapters=41 free_code_cache=48824Kb largest_free_block=49995840
+
+Compilation events (0 events):
+No events
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (10 events):
+Event: 0.031 loading class 0x00007f90354c3900 done
+Event: 0.032 loading class 0x00007f90354d31d0
+Event: 0.032 loading class 0x00007f90354d31d0 done
+Event: 0.032 loading class 0x00007f90354cf370
+Event: 0.032 loading class 0x00007f90354cf370 done
+Event: 0.032 loading class 0x00007f90354d7ec0
+Event: 0.032 loading class 0x00007f90354d7ec0 done
+Event: 0.032 loading class 0x00007f90354d7ef0
+Event: 0.032 loading class 0x00007f90354d7ef0 done
+Event: 0.041 Thread 0x00007f903c1cb800 Thread added: 0x00007f903c1cb800
+
+
+Dynamic libraries:
+00400000-00401000 r-xp 00000000 08:01 1050720                            /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java
+00600000-00601000 r--p 00000000 08:01 1050720                            /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java
+00601000-00602000 rw-p 00001000 08:01 1050720                            /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java
+0158d000-015ae000 rw-p 00000000 00:00 0                                  [heap]
+b7200000-b8700000 rw-p 00000000 00:00 0 
+b8700000-c1800000 rw-p 00000000 00:00 0 
+c1800000-d6700000 rw-p 00000000 00:00 0 
+d6700000-eb280000 rw-p 00000000 00:00 0 
+eb280000-f5a00000 rw-p 00000000 00:00 0 
+f5a00000-100000000 rw-p 00000000 00:00 0 
+7f9004000000-7f9004021000 rw-p 00000000 00:00 0 
+7f9004021000-7f9008000000 ---p 00000000 00:00 0 
+7f900c000000-7f900c021000 rw-p 00000000 00:00 0 
+7f900c021000-7f9010000000 ---p 00000000 00:00 0 
+7f9014000000-7f9014021000 rw-p 00000000 00:00 0 
+7f9014021000-7f9018000000 ---p 00000000 00:00 0 
+7f9018000000-7f9018021000 rw-p 00000000 00:00 0 
+7f9018021000-7f901c000000 ---p 00000000 00:00 0 
+7f901c000000-7f901c021000 rw-p 00000000 00:00 0 
+7f901c021000-7f9020000000 ---p 00000000 00:00 0 
+7f9020000000-7f9020021000 rw-p 00000000 00:00 0 
+7f9020021000-7f9024000000 ---p 00000000 00:00 0 
+7f90273f4000-7f90275f6000 rw-p 00000000 00:00 0 
+7f90275f6000-7f90275f7000 ---p 00000000 00:00 0 
+7f90275f7000-7f9028000000 rw-p 00000000 00:00 0 
+7f9028000000-7f9028021000 rw-p 00000000 00:00 0 
+7f9028021000-7f902c000000 ---p 00000000 00:00 0 
+7f902c000000-7f902c021000 rw-p 00000000 00:00 0 
+7f902c021000-7f9030000000 ---p 00000000 00:00 0 
+7f9030000000-7f9030021000 rw-p 00000000 00:00 0 
+7f9030021000-7f9034000000 ---p 00000000 00:00 0 
+7f903403b000-7f9035297000 rw-p 00000000 00:00 0 
+7f9035297000-7f903544d000 r--s 01d63000 08:01 1183675                    /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rt.jar
+7f903544d000-7f9037bd5000 rw-p 00000000 00:00 0 
+7f9037bd5000-7f9037bd6000 ---p 00000000 00:00 0 
+7f9037bd6000-7f9037cd6000 rw-p 00000000 00:00 0 
+7f9037cd6000-7f9037cd7000 ---p 00000000 00:00 0 
+7f9037cd7000-7f9037dd7000 rw-p 00000000 00:00 0 
+7f9037dd7000-7f9037dd8000 ---p 00000000 00:00 0 
+7f9037dd8000-7f9037ed8000 rw-p 00000000 00:00 0 
+7f9037ed8000-7f9037ed9000 ---p 00000000 00:00 0 
+7f9037ed9000-7f9037fd9000 rw-p 00000000 00:00 0 
+7f9037fd9000-7f9037fda000 ---p 00000000 00:00 0 
+7f9037fda000-7f90380da000 rw-p 00000000 00:00 0 
+7f90380da000-7f90380db000 ---p 00000000 00:00 0 
+7f90380db000-7f90381db000 rw-p 00000000 00:00 0 
+7f90381db000-7f90381dc000 ---p 00000000 00:00 0 
+7f90381dc000-7f90382dc000 rw-p 00000000 00:00 0 
+7f90382dc000-7f90382dd000 ---p 00000000 00:00 0 
+7f90382dd000-7f90383e8000 rw-p 00000000 00:00 0 
+7f90383e8000-7f9038430000 rw-p 00000000 00:00 0 
+7f9038430000-7f90384d8000 rw-p 00000000 00:00 0 
+7f90384d8000-7f903857e000 rw-p 00000000 00:00 0 
+7f903857e000-7f9038589000 rw-p 00000000 00:00 0 
+7f9038589000-7f90385d1000 rw-p 00000000 00:00 0 
+7f90385d1000-7f9038679000 rw-p 00000000 00:00 0 
+7f9038679000-7f903871e000 rw-p 00000000 00:00 0 
+7f903871e000-7f9038772000 rw-p 00000000 00:00 0 
+7f9038772000-7f90387c5000 rw-p 00000000 00:00 0 
+7f90387c5000-7f90387c6000 rw-p 00000000 00:00 0 
+7f90387c6000-7f9038a36000 rwxp 00000000 00:00 0 
+7f9038a36000-7f903b7c6000 rw-p 00000000 00:00 0 
+7f903b7c6000-7f903b7ce000 r-xp 00000000 08:01 1183742                    /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/a

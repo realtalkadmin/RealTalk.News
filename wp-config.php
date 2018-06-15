@@ -16,8 +16,6 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('WP_CACHE', true);
-define( 'WPCACHEHOME', '/home/realtalkadmin/realtalk.news/wp-content/plugins/wp-super-cache/' );
 define('DB_NAME', 'realtalk_news_6');
 
 /** MySQL database username */
@@ -80,6 +78,10 @@ define('WP_POST_REVISIONS',  10);
  * language support.
  */
 define('WPLANG', '');
+
+define('WP_CACHE', true);
+
+
 
 /**
  * For developers: WordPress debugging mode.
