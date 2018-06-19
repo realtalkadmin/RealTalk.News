@@ -1,0 +1,135 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# pthread_getattr_np
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   In 32 bit mode, the process size limit was hit
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Use 64 bit Java on a 64 bit OS
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (os_linux_x86.cpp:718), pid=27563, tid=140625763100416
+#
+# JRE version:  (7.0_151-b01) (build )
+# Java VM: OpenJDK 64-Bit Server VM (24.151-b01 mixed mode linux-amd64 compressed oops)
+# Derivative: IcedTea 2.6.11
+# Distribution: Ubuntu 14.04 LTS, package 7u151-2.6.11-0ubuntu1.14.04.1
+# Failed to write core dump. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00007fe6101cb800):  JavaThread "Reference Handler" daemon [_thread_new, id=27574, stack(0x0000000000000000,0x0000000000000000)]
+
+Stack: [0x0000000000000000,0x0000000000000000],  sp=0x00007fe5fca7dae0,  free space=137329846774k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [libjvm.so+0x962b45]
+V  [libjvm.so+0x49a474]
+V  [libjvm.so+0x7e21ea]
+V  [libjvm.so+0x7e223d]
+V  [libjvm.so+0x90f619]
+V  [libjvm.so+0x91568c]
+V  [libjvm.so+0x7d75c2]
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+=>0x00007fe6101cb800 JavaThread "Reference Handler" daemon [_thread_new, id=27574, stack(0x0000000000000000,0x0000000000000000)]
+  0x00007fe61000a000 JavaThread "main" [_thread_in_native, id=27564, stack(0x00007fe618088000,0x00007fe618189000)]
+
+Other Threads:
+  0x00007fe6101c5800 VMThread [stack: 0x00007fe5fca7f000,0x00007fe5fcb80000] [id=27573]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap
+ PSYoungGen      total 150528K, used 2590K [0x00000000eb280000, 0x00000000f5a00000, 0x0000000100000000)
+  eden space 129536K, 2% used [0x00000000eb280000,0x00000000eb507b38,0x00000000f3100000)
+  from space 20992K, 0% used [0x00000000f4580000,0x00000000f4580000,0x00000000f5a00000)
+  to   space 20992K, 0% used [0x00000000f3100000,0x00000000f3100000,0x00000000f4580000)
+ ParOldGen       total 343040K, used 0K [0x00000000c1800000, 0x00000000d6700000, 0x00000000eb280000)
+  object space 343040K, 0% used [0x00000000c1800000,0x00000000c1800000,0x00000000d6700000)
+ PSPermGen       total 21504K, used 938K [0x00000000b7200000, 0x00000000b8700000, 0x00000000c1800000)
+  object space 21504K, 4% used [0x00000000b7200000,0x00000000b72eaa88,0x00000000b8700000)
+
+Card table byte_map: [0x00007fe614a58000,0x00007fe614ca0000] byte_map_base: 0x00007fe61449f000
+
+Polling page: 0x00007fe61819e000
+
+Code Cache  [0x00007fe60d000000, 0x00007fe60d270000, 0x00007fe610000000)
+ total_blobs=63 nmethods=0 adapters=41 free_code_cache=48824Kb largest_free_block=49995840
+
+Compilation events (0 events):
+No events
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (10 events):
+Event: 0.032 loading class 0x00007fe614054900 done
+Event: 0.032 loading class 0x00007fe6140641d0
+Event: 0.032 loading class 0x00007fe6140641d0 done
+Event: 0.032 loading class 0x00007fe614060370
+Event: 0.033 loading class 0x00007fe614060370 done
+Event: 0.033 loading class 0x00007fe614068ec0
+Event: 0.033 loading class 0x00007fe614068ec0 done
+Event: 0.033 loading class 0x00007fe614068ef0
+Event: 0.033 loading class 0x00007fe614068ef0 done
+Event: 0.033 Thread 0x00007fe6101cb800 Thread added: 0x00007fe6101cb800
+
+
+Dynamic libraries:
+00400000-00401000 r-xp 00000000 08:01 1050720                            /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java
+00600000-00601000 r--p 00000000 08:01 1050720                            /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java
+00601000-00602000 rw-p 00001000 08:01 1050720                            /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java
+00688000-006a9000 rw-p 00000000 00:00 0                                  [heap]
+b7200000-b8700000 rw-p 00000000 00:00 0 
+b8700000-c1800000 rw-p 00000000 00:00 0 
+c1800000-d6700000 rw-p 00000000 00:00 0 
+d6700000-eb280000 rw-p 00000000 00:00 0 
+eb280000-f5a00000 rw-p 00000000 00:00 0 
+f5a00000-100000000 rw-p 00000000 00:00 0 
+7fe5d8000000-7fe5d8021000 rw-p 00000000 00:00 0 
+7fe5d8021000-7fe5dc000000 ---p 00000000 00:00 0 
+7fe5dc000000-7fe5dc021000 rw-p 00000000 00:00 0 
+7fe5dc021000-7fe5e0000000 ---p 00000000 00:00 0 
+7fe5e0000000-7fe5e0021000 rw-p 00000000 00:00 0 
+7fe5e0021000-7fe5e4000000 ---p 00000000 00:00 0 
+7fe5e8000000-7fe5e8021000 rw-p 00000000 00:00 0 
+7fe5e8021000-7fe5ec000000 ---p 00000000 00:00 0 
+7fe5f0000000-7fe5f0021000 rw-p 00000000 00:00 0 
+7fe5f0021000-7fe5f4000000 ---p 00000000 00:00 0 
+7fe5f8000000-7fe5f8021000 rw-p 00000000 00:00 0 
+7fe5f8021000-7fe5fc000000 ---p 00000000 00:00 0 
+7fe5fc87d000-7fe5fca7f000 rw-p 00000000 00:00 0 
+7fe5fca7f000-7fe5fca80000 ---p 00000000 00:00 0 
+7fe5fca80000-7fe600000000 rw-p 00000000 00:00 0 
+7fe600000000-7fe600021000 rw-p 00000000 00:00 0 
+7fe600021000-7fe604000000 ---p 00000000 00:00 0 
+7fe604000000-7fe604021000 rw-p 00000000 00:00 0 
+7fe604021000-7fe608000000 ---p 00000000 00:00 0 
+7fe608000000-7fe608021000 rw-p 00000000 00:00 0 
+7fe608021000-7fe60c000000 ---p 00000000 00:00 0 
+7fe60c082000-7fe60cb8d000 rw-p 00000000 00:00 0 
+7fe60cb8d000-7fe60cd43000 r--s 01d63000 08:01 1183675                    /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rt.jar
+7fe60cd43000-7fe60d000000 rw-p 00000000 00:00 0 
+7fe60d000000-7fe60d270000 rwxp 00000000 00:00 0 
+7fe60d270000-7fe6101d8000 rw-p 00000000 00:00 0 
+7fe6101d8000-7fe614000000 ---p 00000000 00:00 0 
+7fe61400a000-7fe6140af000 rw-
